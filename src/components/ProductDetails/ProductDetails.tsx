@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./productdetails.module.scss";
 import MedicineImage from "../../assets/images/genericviagra.svg";
-import VerifiedIcon from "/../../assets/icons/verifiedicon.svg";
+import VerifiedIcon from "../../assets/icons/verifiedicon.svg";
 
 import Spacer from "../Spacer/Spacer";
 import Image from "next/image";
