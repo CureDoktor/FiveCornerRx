@@ -1,0 +1,184 @@
+.heroMain_container {
+    .heroflex {
+        display: flex !important;
+        width: 100%;
+
+        .hero_img_container {
+            width: 30%;
+            height: auto;
+            padding: 0rem !important;
+
+            .hero_img {
+                width: 100%;
+            }
+        }
+
+        .txt {
+            width: 70%;
+            padding: 0rem !important;
+        }
+    }
+
+    .homeHero_h1Dark {
+        font-family: "poppins";
+        font-size: 5.5rem;
+        font-weight: 600;
+        text-align: left;
+        color: #ffffff;
+        // margin-top: 3rem;
+    }
+
+    .homeHero_h1Light {
+        font-family: "poppins";
+        font-size: 5.5rem;
+        font-weight: 700;
+        text-align: left;
+        color: #0F172A;
+        // margin-top: 3rem;
+    }
+
+    h5 {
+        color: #0F172A;
+        font-size: 3rem;
+        // margin-left: 2px;
+        margin-top: 1.5rem;
+    }
+
+    .leadDark {
+        font-size: 1.6rem;
+        text-align: left;
+        font-weight: 400;
+        color: #f8fafc;
+        line-height: 3.2rem;
+        // margin-top: 2rem;
+        margin: 2rem 0;
+    }
+
+    .leadLight {
+        font-size: 1.7rem;
+        text-align: left;
+        font-weight: 400;
+        color: #52525B;
+        line-height: 3.2rem;
+        // margin-top: 2rem;s
+        margin: 2rem 0;
+
+    }
+
+    .Free_Consult_link {
+        background: #eb2525 !important;
+        color: #ffffff !important;
+        border-radius: 8px !important;
+        border: none;
+        margin-top: 1px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Free_Consult_rightArrow {
+            margin: 0rem .5rem 0rem .5rem;
+        }
+    }
+
+    .safe_text_p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 4.5rem;
+        color: #aebacb;
+    }
+}
+
+
+//Responsiveness
+
+@media only screen and (max-width: 995px) {
+    .heroflex {
+        .homeHero-h1 {
+            font-size: 4rem;
+        }
+
+        .lead {
+            font-size: 1.4rem;
+        }
+
+        .Free_Consult_link {
+            font-size: 1.5rem;
+        }
+
+        .safe_text_p {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 867px) {
+    .heroDiv {
+
+        // border: 1px solid red !important;
+        .homeHero-h1 {
+            font-size: 3.5rem;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+        }
+
+        .safe_text_p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    .heroMain_container {
+        .heroflex {
+            margin: 0 auto;
+
+            .txt {
+                .heroDiv {
+                    h1 {
+                        margin-top: 4rem;
+                    }
+
+                    h1,
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+
+
+            text-align: center;
+            flex-direction: column;
+
+            .hero_img_container {
+                width: 100% !important;
+            }
+
+            .txt {
+                width: 100% !important;
+            }
+
+            .homeHero_h1Dark,
+            .homeHero_h1Light {
+                font-size: 3.5rem;
+
+            }
+
+
+            .safe_text_p {
+                font-size: 1.2rem;
+            }
+
+            .Free_Consult_link {
+                margin: auto;
+
+                font-weight: 500;
+            }
+        }
+    }
+}

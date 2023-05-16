@@ -1,0 +1,24 @@
+.formContainer {
+  width: 66rem;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+
+  padding: 2.4rem;
+  border-radius: 20px;
+
+  .rowContent {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .formContainer {
+    width: 90%;
+    // margin: 1rem;
+
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,27 @@
+$basic_font_size: 1.2rem;
+
+.primaryText {
+  font-size: $basic_font_size;
+
+  span {
+    color: #2563eb;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.pageHead {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.secondaryPageText {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0rem 1rem;
+
+  margin-bottom: 2rem;
+}

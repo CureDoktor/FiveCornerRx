@@ -1,0 +1,230 @@
+.HowItsWOrkcontainer {
+  background-color: #ffffff;
+
+  .hero_sectionHowItsWork {
+    background: linear-gradient(
+      -125deg,
+      #32465e 0%,
+      #1f2a39 96.65%,
+      #151b23 100%
+    );
+    padding-bottom: 3rem;
+
+    .mainHOWITSWORK {
+      .howitswork_container {
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        padding-top: 6rem;
+
+        h1 {
+          font-size: 6.5rem;
+          font-weight: 700;
+          text-align: center;
+          color: #ffffff !important;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 300;
+          text-align: center;
+          line-height: 3.5rem;
+          color: #f8fafc;
+          padding-bottom: 4rem;
+        }
+      }
+    }
+  }
+
+  .mainWorkscontainer {
+    background: #ffffff;
+    padding: 6rem 0rem;
+
+    .mainWorkscontainer_box {
+      margin-bottom: 6rem;
+
+      .freeHealthImg {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .freeHealthtxt {
+        width: 50%;
+        padding-left: 2.5rem;
+
+        h2 {
+          font-size: 4rem;
+          font-weight: 700;
+          color: #151b23;
+          margin-top: 1.5rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 3.5rem;
+          color: #52525b;
+          margin-top: 1.5rem;
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+
+    .mainWorkscontainer_save {
+      padding-top: 6rem;
+    }
+
+    .longterm_section {
+      background: #f8fafc;
+      padding: 4rem 0rem 0.1rem 0rem;
+
+      .mainWorkscontainer_reverse {
+        display: flex !important;
+        flex-direction: row-reverse;
+        gap: 2.5rem;
+
+        .freeHealthtxt {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .chatWithUs_conatiner {
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem;
+
+    .chatWithUs_section {
+      width: 60%;
+      text-align: center;
+      margin: auto;
+
+      img {
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 5rem;
+        font-weight: 600;
+        color: #090914;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: center;
+      color: #52525b;
+      margin-top: 20px;
+    }
+  }
+}
+
+.width_component {
+  width: 80%;
+  margin: auto;
+}
+
+.Free_Consult_link {
+  background: #eb2525 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  border: none;
+  margin-top: 1px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1.5rem 0rem 1.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .howitswork_container {
+    width: 100% !important;
+  }
+
+  .chatWithUs_conatiner {
+    .chatWithUs_section {
+      width: 90% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .howitswork_container {
+    h1 {
+      font-size: 4rem !important;
+    }
+
+    p {
+      font-size: 1.8rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .mainWorkscontainer_box {
+    text-align: center;
+    flex-direction: column;
+
+    .freeHealthImg {
+      width: 100% !important;
+      padding: 0;
+    }
+
+    .freeHealthtxt {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+
+    .Free_Consult_link {
+      margin: 0 auto;
+    }
+  }
+
+  .longterm_section {
+    .mainWorkscontainer_box {
+      flex-direction: column !important;
+
+      .freeHealthtxt {
+        padding: 0rem 1rem !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .HowItsWOrkcontainer {
+    .hero_sectionHowItsWork {
+      .mainHOWITSWORK {
+        .howitswork_container {
+          h1 {
+            font-size: 4rem !important;
+          }
+
+          p {
+            font-size: 1.5rem !important;
+          }
+
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .Free_Consult_link {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}

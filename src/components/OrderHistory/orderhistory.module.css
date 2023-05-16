@@ -1,0 +1,21 @@
+.tableContainer {
+  margin: 1.5rem 1.75rem;
+}
+
+.tableHead {
+  background-color: #DBEAFE;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.tableHead tr th {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.5rem 1.75rem;
+}
+
+.tableBody tr td {
+  font-size: 1.2rem;
+  padding: 1.5rem 1.75rem;
+}
+/*# sourceMappingURL=orderhistory.module.css.map */

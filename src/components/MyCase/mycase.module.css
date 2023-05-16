@@ -1,0 +1,79 @@
+.headText {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.primaryText {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.myCaseContentContainer {
+  padding: 1.5rem 1.75rem;
+}
+
+.imageUploadSection {
+  border: 3px dotted #E6E6E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4.2rem 0;
+}
+
+.imageUploadSection p {
+  color: #B3B3B6;
+}
+
+.imageUploadSection .actionBtn {
+  width: 25rem;
+  height: 4.8rem;
+  background-color: #EB2525;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.quessionareContainer {
+  width: 100%;
+}
+
+.quessionareContainer .questionContainer {
+  width: 100%;
+}
+
+.quessionareContainer .questionContainer .question {
+  color: #0F172A;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.quessionareContainer .questionContainer .answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F8FAFC;
+  padding: 1rem 1.5rem;
+}
+
+.quessionareContainer .questionContainer .answer p {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=mycase.module.css.map */
