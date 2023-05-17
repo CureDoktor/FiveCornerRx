@@ -35,7 +35,7 @@ const ProfileMenuPopUp: React.FC<Props> = ({
         }}
         className={styles.popUpOption}
       >
-        <Image src={ProfileIcon} alt="logout_icon" />
+        <Image src={ProfileIcon} alt="logout_icon" width={15} height={13} />
         <p>Account Setting</p>
       </div>
       <div
@@ -45,7 +45,7 @@ const ProfileMenuPopUp: React.FC<Props> = ({
         }}
         className={styles.popUpOption}
       >
-        <Image src={LogoutIcon} alt="logout_icon" />
+        <Image src={LogoutIcon} alt="logout_icon" width={15} height={13} />
         <p>Log out</p>
       </div>
     </div>

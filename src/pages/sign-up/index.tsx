@@ -141,7 +141,7 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
               Sign Up
             </button>
             <button className={styles.formBtn + " " + styles.secondaryBtn}>
-              <Image alt="googleIcon" src={GoogleIcon} />
+              <Image alt="googleIcon" src={GoogleIcon} width={24} height={24} />
               Continue with Google
             </button>
             <p

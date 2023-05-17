@@ -60,7 +60,7 @@ const TadalafilCitrate = () => {
                 height={30}
                 src={tickVerified}
                 alt="Card"
-              />      
+              />
               <p className={styles.card_text}>Free, discreet 2-day shipping</p>
             </div>
             <div
@@ -109,7 +109,7 @@ const TadalafilCitrate = () => {
             }
           >
             <div className={styles.freeHealthImg}>
-              <Image src={bg4} alt="" />
+              <Image src={bg4} width={551} height={531} alt="" />
             </div>
             <div className={styles.freeHealthtxt}>
               <h2>Convenient. Secure. Affordable</h2>

@@ -123,7 +123,7 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
               Sign In
             </button>
             <button className={styles.formBtn + " " + styles.secondaryBtn}>
-              <Image src={GoogleIcon} alt="" />
+              <Image src={GoogleIcon} width={24} height={24} alt="" />
               Continue with Google
             </button>
             <p style={{ textAlign: "center" }} className={styles.primaryText}>
