@@ -39,6 +39,7 @@ const Hero: React.FC<Props> = ({
               className={styles.hero_img}
               src={image}
               alt="medicine_image"
+              layout="fill"
             />
           )}
         </div>
@@ -74,6 +75,8 @@ const Hero: React.FC<Props> = ({
               <Image
                 className={styles.Free_Consult_rightArrow}
                 src={icon}
+                width={15}
+                height={11}
                 alt="arrow"
               />{" "}
             </Button>

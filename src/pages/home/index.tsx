@@ -100,13 +100,15 @@ const HomePage = () => {
                     <Image
                       className={styles.Free_Consult_rightArrow}
                       src={icon}
+                      width={15}
+                      height={11}
                       alt="arrow"
                     />
                   </Button>
                 </Link>
 
                 {/* </Link> */}
-                <Image src={halfBottle1} alt="" />
+                <Image src={halfBottle1} alt="" width={280} height={300} />
               </div>
               <div className={styles.treatment_offers_box}>
                 <p className={styles.offers_p1}>Tadalafil Generic</p>
@@ -122,11 +124,18 @@ const HomePage = () => {
                     <Image
                       className={styles.Free_Consult_rightArrow}
                       src={icon}
+                      width={15}
+                      height={11}
                       alt="arrow"
                     />
                   </Button>
                 </Link>
-                <Image src={CialisHalfBottle1} alt="" />
+                <Image
+                  src={CialisHalfBottle1}
+                  alt=""
+                  width={280}
+                  height={300}
+                />
               </div>
             </div>
           </div>
@@ -156,13 +165,15 @@ const HomePage = () => {
                   <Image
                     className={styles.Free_Consult_rightArrow}
                     src={icon}
+                    width={15}
+                    height={11}
                     alt="arrow"
                   />
                 </Button>
                 {/* </Link> */}
               </div>
               <div className={styles.treatment_option_img_container}>
-                <Image src={drMen} alt="" />
+                <Image src={drMen} alt="" width={470} height={405} />
               </div>
             </div>
           </div>
@@ -221,6 +232,8 @@ const HomePage = () => {
                     src={Sildenafil}
                     className={styles.getReady_viagra}
                     alt="get ready"
+                    width={470}
+                    height={405}
                   />
                 </div>
                 <div className={styles.getReady_img_box}>
@@ -249,6 +262,8 @@ const HomePage = () => {
                   <Image
                     className={styles.Free_Consult_rightArrow + " mx-2"}
                     src={icon}
+                    width={15}
+                    height={11}
                     alt="arrow"
                   />
                 </Button>

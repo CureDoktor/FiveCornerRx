@@ -42,13 +42,12 @@ const Footer = () => {
           }
         >
           <div className={styles.footer_left}>
-            <Image src={logo} alt="logo" width={18} height={164} />
+            <Image src={logo} alt="logo" width={164} height={18} />
             <ul className="d-block ">
               <li>
                 <Image src={phone} alt="" width={15} height={15} />
                 {CONSTANTS.PHONE_NUMBER}
               </li>
-
               <li>
                 <Image src={mail} alt="" width={15} height={15} />
                 support@fivecornersrx.com

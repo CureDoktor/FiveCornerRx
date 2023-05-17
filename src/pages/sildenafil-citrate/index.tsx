@@ -119,6 +119,8 @@ const SildenafilCitrate = () => {
                 <Image
                   className={styles.Free_Consult_rightArrow + "  mx-3"}
                   src={icon}
+                  width={15}
+                  height={11}
                   alt="arrow"
                 />
               </Button>
@@ -152,6 +154,8 @@ const SildenafilCitrate = () => {
                 <Image
                   className={styles.Free_Consult_rightArrow + " mx-3"}
                   src={icon}
+                  width={15}
+                  height={11}
                   alt="arrow"
                 />
               </Button>
