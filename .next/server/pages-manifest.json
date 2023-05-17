@@ -2,9 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/order/order-from-profile": "pages/api/order/order-from-profile.js",
-  "/api/case/get-case": "pages/api/case/get-case.js",
-  "/api/user/getUserInfo": "pages/api/user/getUserInfo.js",
-  "/api/order/get-orders": "pages/api/order/get-orders.js",
-  "/api/case/get-product": "pages/api/case/get-product.js"
+  "/sign-up": "pages/sign-up.js"
 }
