@@ -108,7 +108,9 @@ const CompleteProfile: React.FC<Props> = ({ step_no, setStep_no }) => {
       <br />
       <ActionButton
         disabled={!formValidated}
-        action={() => handleSubmit}
+        action={() => {
+          handleSubmit(event);
+        }}
         type={BtnTypes.Success}
         text="Next"
       />

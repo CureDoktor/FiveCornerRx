@@ -18,14 +18,7 @@ const UserAvatar: React.FC<Props> = ({
 }) => {
   return (
     <div className={styles.userProfileAvatarContainer}>
-      <Image
-        style={{
-          width: width,
-          height: height,
-        }}
-        src={image}
-        alt="profile_image"
-      />
+      <Image width={width} height={height} src={image} alt="profile_image" />
       <div className={styles.profileDetails}>
         <p className={styles.userName}>{primaryText}</p>
         <p className={styles.secondaryDetails}>{secondaryText}</p>

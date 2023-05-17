@@ -139,6 +139,8 @@ const UserDashboard: React.FC = () => {
                   className={styles.closeicon}
                   src={CloseIcon}
                   alt="close_icon"
+                  height={50}
+                  width={50}
                 />
               ) : null}
 

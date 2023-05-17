@@ -26,6 +26,7 @@ const HomePage = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <motion.main
       initial={{ opacity: 0 }}

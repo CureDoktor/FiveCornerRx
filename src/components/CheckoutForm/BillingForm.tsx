@@ -217,7 +217,7 @@ const BillingForm: React.FC<Props> = ({ step, setStep }) => {
         <div className="btnContainer">
           <ActionButton
             disabled={!formValidated}
-            action={() => submitHandler}
+            action={() => submitHandler(event)}
             type={BtnTypes.Success}
             text="Next"
           />

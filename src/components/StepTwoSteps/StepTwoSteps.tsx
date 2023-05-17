@@ -317,7 +317,7 @@ const StepTwoSteps: React.FC<Props> = ({ setOuterStep, setHideFormHeader }) => {
                         return (
                           <div
                             key={value.label + key}
-                            className={yesNo + styles.textFont}
+                            className={yesNo + " " + styles.textFont}
                           >
                             <Form.Check>
                               <Form.Check.Input
@@ -359,9 +359,7 @@ const StepTwoSteps: React.FC<Props> = ({ setOuterStep, setHideFormHeader }) => {
                       >
                         {labela}
                         <br /> <Row>{options}</Row>
-                        <div className={styles.error_message}>
-                          {question.validation.message}
-                        </div>
+                        <div className={styles.error_message}></div>
                         <br /> <br /> <br /> <br />
                       </div>
                     );
@@ -371,7 +369,7 @@ const StepTwoSteps: React.FC<Props> = ({ setOuterStep, setHideFormHeader }) => {
                       ([key, value]: [key: any, value: any], index) => {
                         return (
                           <div
-                            className={styles.textFont + "col-12"}
+                            className={styles.textFont + " col-12"}
                             key={value.label + key}
                           >
                             <br />

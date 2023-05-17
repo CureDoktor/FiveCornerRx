@@ -1,5 +1,6 @@
 import React from "react";
 // import { BrowserRouter as Link } from "react-router-dom";
+
 import { Button } from "react-bootstrap";
 import styles from "./hero.module.scss";
 import icon from "../../assets/icons/Icon.svg";
@@ -20,6 +21,7 @@ const Hero: React.FC<Props> = ({
   details,
   image,
 }) => {
+  console.log(image);
   return (
     <div className={styles.heroMain_container + " container"}>
       <div
@@ -39,7 +41,8 @@ const Hero: React.FC<Props> = ({
               className={styles.hero_img}
               src={image}
               alt="medicine_image"
-              layout="fill"
+              width={250}
+              height={300}
             />
           )}
         </div>

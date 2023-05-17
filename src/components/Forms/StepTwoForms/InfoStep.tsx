@@ -46,7 +46,7 @@ const InfoStep: React.FC<Props> = ({
       <p></p>
       <Spacer />
       <center>
-        <Image src={image} alt="" />
+        <Image src={image} alt="" width={150} height={150} />
       </center>
       <Spacer />
       <Spacer />

@@ -86,25 +86,25 @@ const ProductDetails = (event: any) => {
       <Spacer />
       <Spacer />
       <div className={styles.extraDetailsRow}>
-        <Image src={VerifiedIcon} alt="medicine_image" />
+        <Image src={VerifiedIcon} alt="medicine_image" height={50} width={50} />
         <p className={styles.lightText}>12 doses - 1 month supply</p>
       </div>
       <Spacer />
       <Spacer />
       <div className={styles.extraDetailsRow}>
-        <Image src={VerifiedIcon} alt="medicine_image" />
+        <Image src={VerifiedIcon} alt="medicine_image" height={50} width={50} />
         <p className={styles.lightText}>Discreet shipping to your house</p>
       </div>
       <Spacer />
       <Spacer />
       <div className={styles.extraDetailsRow}>
-        <Image src={VerifiedIcon} alt="medicine_image" />
+        <Image src={VerifiedIcon} alt="medicine_image" height={50} width={50} />
         <p className={styles.lightText}>FREE online physician consultation.</p>
       </div>
       <Spacer />
       <Spacer />
       <div className={styles.extraDetailsRow}>
-        <Image src={VerifiedIcon} alt="medicine_image" />
+        <Image src={VerifiedIcon} alt="medicine_image" height={50} width={50} />
         <p className={styles.lightText}>Automatic refills every 30 days.</p>
       </div>
     </div>
