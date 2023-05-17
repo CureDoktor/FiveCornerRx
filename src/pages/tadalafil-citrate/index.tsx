@@ -60,7 +60,7 @@ const TadalafilCitrate = () => {
                 height={30}
                 src={tickVerified}
                 alt="Card"
-              />
+              />      
               <p className={styles.card_text}>Free, discreet 2-day shipping</p>
             </div>
             <div

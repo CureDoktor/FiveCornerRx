@@ -27,10 +27,10 @@ const ProductDetails = (event: any) => {
     const route = "/api/case/get-product";
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
-        .then((res) => {
+        .then((res: any) => {
           setProduct(res.data);
         })
-        .catch((error) => {
+        .catch((error: any) => {
           console.log(error);
           return alert("Not Good!");
         });
