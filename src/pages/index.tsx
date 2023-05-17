@@ -10,7 +10,7 @@ import shipping from "../assets/icons/shipping.svg";
 import hearBack from "../assets/icons/hearBack.svg";
 import icon from "../assets/icons/Icon.svg";
 import halfBottle1 from "../assets/images/halfbottle.svg";
-import CialisHalfBottle1 from "../assets/images/cialishalfbottle.svg";
+import CialisHalfBottle1 from "/assets/images/cialishalfbottle.svg";
 import drMen from "../assets/images/drMen.svg";
 import cialis from "../assets/images/cialis.svg";
 import Sildenafil from "../assets/images/bottle-design-Tadalafil1.svg";
@@ -108,7 +108,12 @@ const Home: React.FC = () => {
                 </Link>
 
                 {/* </Link> */}
-                <Image src={halfBottle1} alt="" width={280} height={300} />
+                <Image
+                  src="/assets/images/halfbottle.svg"
+                  alt=""
+                  width={280}
+                  height={300}
+                />
               </div>
               <div className={styles.treatment_offers_box}>
                 <p className={styles.offers_p1}>Tadalafil Generic</p>
@@ -131,7 +136,7 @@ const Home: React.FC = () => {
                   </Button>
                 </Link>
                 <Image
-                  src={CialisHalfBottle1}
+                  src="/assets/images/cialishalfbottle.svg"
                   alt=""
                   width={280}
                   height={300}
@@ -173,7 +178,12 @@ const Home: React.FC = () => {
                 {/* </Link> */}
               </div>
               <div className={styles.treatment_option_img_container}>
-                <Image src={drMen} alt="" width={470} height={405} />
+                <Image
+                  src="/assets/images/drMen.svg"
+                  alt=""
+                  width={470}
+                  height={405}
+                />
               </div>
             </div>
           </div>
@@ -229,7 +239,7 @@ const Home: React.FC = () => {
               <div className={styles.getReady_img_container}>
                 <div className={styles.getReady_img_box}>
                   <Image
-                    src={Sildenafil}
+                    src="/assets/images/bottle-design-Tadalafil1.svg"
                     className={styles.getReady_viagra}
                     alt="get ready"
                     width={470}
@@ -238,7 +248,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className={styles.getReady_img_box}>
                   <Image
-                    src={cialis}
+                    src="/assets/images/cialis.svg"
                     alt="get ready"
                     className={styles.getReady_cialis}
                     width={350}
