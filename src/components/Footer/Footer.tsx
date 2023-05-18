@@ -61,7 +61,7 @@ const Footer = () => {
               <h5>Useful Links</h5>
               <ul className="d-block">
                 {/* <Link> */}
-                <li>About us</li>
+                {/* <li>About us</li> */}
                 {/* </Link> */}
                 <li onClick={() => history.push(PATH.HowItWork)}>
                   How it works

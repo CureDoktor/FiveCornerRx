@@ -29,7 +29,7 @@ const TadalafilCitrate = () => {
     >
       <div className={styles.HomePagecontainer}>
         <div className={styles.hero_sectionSildenafilCitrate}>
-          <div className={styles.width_component + " container"}>
+          <div className={styles.width_component + " container pt-5 pb-5"}>
             <Hero
               type="light"
               primaryHead="Generic Cialis"

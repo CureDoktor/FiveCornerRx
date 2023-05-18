@@ -39,7 +39,7 @@ const Home: React.FC = () => {
       <div>
         <div className={styles.HomePagecontainer}>
           <div className={styles.hero_section}>
-            <div className={styles.width_component + " container"}>
+            <div className={styles.width_component + " container pt-5"}>
               <Hero
                 type="dark"
                 primaryHead="Regain Control of Erectile Dysfunction"
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
                   <Button className={styles.FreeConsultlink}>
                     Start Now
                     <Image
-                      className={styles.Free_Consult_rightArrow}
+                      className={styles.Free_Consult_rightArrow + " px-1"}
                       src={icon}
                       width={15}
                       height={11}
@@ -130,7 +130,7 @@ const Home: React.FC = () => {
                   <Button className={styles.FreeConsultlink}>
                     Start Now{" "}
                     <Image
-                      className={styles.Free_Consult_rightArrow}
+                      className={styles.Free_Consult_rightArrow + " px-1"}
                       src={icon}
                       width={15}
                       height={11}
@@ -176,7 +176,7 @@ const Home: React.FC = () => {
                 >
                   Start Now
                   <Image
-                    className={styles.Free_Consult_rightArrow}
+                    className={styles.Free_Consult_rightArrow + " px-1"}
                     src={icon}
                     width={15}
                     height={11}
@@ -276,14 +276,14 @@ const Home: React.FC = () => {
                 </p>
                 {/* <Link > */}
                 <Button
-                  className={styles.FreeConsultlink}
+                  className={styles.FreeConsultlink + " pr-2"}
                   onClick={() => {
                     history.push("/sign-up");
                   }}
                 >
                   Start Now
                   <Image
-                    className={styles.Free_Consult_rightArrow + " mx-2"}
+                    className={styles.Free_Consult_rightArrow + " me-2"}
                     src={icon}
                     width={15}
                     height={11}

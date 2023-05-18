@@ -11,10 +11,10 @@ export const PATH = {
   //
   ApiCall: "/Api/hello",
   HomePage: "/",
-  HowItWork: "/HowItWork",
-  FaqsPage: "/FaqsPage",
-  SildenafilCitrate: "/SildenafilCitrate",
-  TadalafilCitrate: "/TadalafilCitrate",
+  HowItWork: "/how-it-works",
+  FaqsPage: "/faq",
+  SildenafilCitrate: "/sildenafil-citrate",
+  TadalafilCitrate: "/tadalafil-citrate",
   //
   Quessionaire: "/quessionaire",
   BillingQuestionnaire: "/billing",
@@ -22,7 +22,7 @@ export const PATH = {
   SignIn: "/sign-in",
   SignUp: "/sign-up",
 
-  TermsAndConditions: "/termsandconditions",
-  PrivacyPolicy: "/privacypolicy",
-  ConsentToTeleHealth: "/consenttotelehealth",
+  TermsAndConditions: "/terms",
+  PrivacyPolicy: "/privacy",
+  ConsentToTeleHealth: "/telehealth",
 };

@@ -60,7 +60,12 @@ const HowItsWork = () => {
             }
           >
             <div className={styles.freeHealthImg}>
-              <Image src={bg} alt="" />
+              <Image
+                src="/assets/images/BG.svg"
+                width={540}
+                height={520}
+                alt=""
+              />
             </div>
             <div className={styles.freeHealthtxt}>
               <h2>Free Health Evaluation</h2>
@@ -97,7 +102,12 @@ const HowItsWork = () => {
               }
             >
               <div className={styles.freeHealthImg}>
-                <Image src={bg1} alt="" />
+                <Image
+                  src="/assets/images/BG-1.svg"
+                  width={540}
+                  height={520}
+                  alt=""
+                />
               </div>
               <div className={styles.freeHealthtxt}>
                 <h2>Free Health Evaluation</h2>
@@ -137,7 +147,12 @@ const HowItsWork = () => {
             }
           >
             <div className={styles.freeHealthImg}>
-              <Image src={bg2} alt="" />
+              <Image
+                src="/assets/images/BG-2.svg"
+                width={540}
+                height={520}
+                alt=""
+              />
             </div>
             <div className={styles.freeHealthtxt}>
               <h2>SAFE and SECURE</h2>
@@ -151,16 +166,18 @@ const HowItsWork = () => {
                 Don't let ED hold you back any longer. Start your journey
                 towards overcoming ED now with us.
               </p>
-              <Button className={styles.Free_Consult_link}>
-                Start Now Consultation
-                <Image
-                  className={styles.Free_Consult_rightArrow + " mx-3"}
-                  src={icon}
-                  width={15}
-                  height={11}
-                  alt="arrow"
-                />
-              </Button>
+              <div>
+                <Button className={styles.Free_Consult_link}>
+                  Start Now Consultation
+                  <Image
+                    className={styles.Free_Consult_rightArrow + " mx-3"}
+                    src={icon}
+                    width={15}
+                    height={11}
+                    alt="arrow"
+                  />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -173,7 +190,12 @@ const HowItsWork = () => {
                 "d-flex justify-content-center align-items-center text-center"
               }
             >
-              <Image src={wave} alt="" />
+              <Image
+                src="/assets/images/wave.svg"
+                alt=""
+                width={53}
+                height={67}
+              />
               <h2>Chat with us!</h2>
             </div>
             <p>

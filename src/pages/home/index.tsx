@@ -37,7 +37,7 @@ const HomePage = () => {
       <div>
         <div className={styles.HomePagecontainer}>
           <div className={styles.hero_section}>
-            <div className={styles.width_component + " container"}>
+            <div className={styles.width_component + " container pt-5"}>
               <Hero
                 type="dark"
                 primaryHead="Regain Control of Erectile Dysfunction"
@@ -99,7 +99,7 @@ const HomePage = () => {
                   <Button className={styles.FreeConsultlink}>
                     Start Now
                     <Image
-                      className={styles.Free_Consult_rightArrow}
+                      className={styles.Free_Consult_rightArrow + " px-1"}
                       src={icon}
                       width={15}
                       height={11}
@@ -123,7 +123,7 @@ const HomePage = () => {
                   <Button className={styles.FreeConsultlink}>
                     Start Now{" "}
                     <Image
-                      className={styles.Free_Consult_rightArrow}
+                      className={styles.Free_Consult_rightArrow + " px-1"}
                       src={icon}
                       width={15}
                       height={11}
@@ -164,7 +164,7 @@ const HomePage = () => {
                 <Button className={styles.FreeConsultlink}>
                   Start Now
                   <Image
-                    className={styles.Free_Consult_rightArrow}
+                    className={styles.Free_Consult_rightArrow + " px-1"}
                     src={icon}
                     width={15}
                     height={11}
