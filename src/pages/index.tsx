@@ -21,7 +21,10 @@ import Accordion from "../components/Accordian/Accordian";
 import Spacer from "../components/Spacer/Spacer";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const Home: React.FC = () => {
+  const history = useRouter();
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -93,7 +96,7 @@ const Home: React.FC = () => {
                 {/* <Link > */}
                 <Link
                   style={{ textDecoration: "none" }}
-                  href="/SildenafilCitrate"
+                  href="/sildenafil-citrate"
                 >
                   <Button className={styles.FreeConsultlink}>
                     Start Now
@@ -122,7 +125,7 @@ const Home: React.FC = () => {
                 {/* <Link > */}
                 <Link
                   style={{ textDecoration: "none" }}
-                  href="/TadalafilCitrate"
+                  href="/tadalafil-citrate"
                 >
                   <Button className={styles.FreeConsultlink}>
                     Start Now{" "}
@@ -165,7 +168,12 @@ const Home: React.FC = () => {
                   American doctors will find the best approach for your needs.
                 </p>
                 {/* <Link > */}
-                <Button className={styles.FreeConsultlink}>
+                <Button
+                  className={styles.FreeConsultlink}
+                  onClick={() => {
+                    history.push("/sign-up");
+                  }}
+                >
                   Start Now
                   <Image
                     className={styles.Free_Consult_rightArrow}
@@ -267,7 +275,12 @@ const Home: React.FC = () => {
                   extend their sexual prime, and now it's your turn.
                 </p>
                 {/* <Link > */}
-                <Button className={styles.FreeConsultlink}>
+                <Button
+                  className={styles.FreeConsultlink}
+                  onClick={() => {
+                    history.push("/sign-up");
+                  }}
+                >
                   Start Now
                   <Image
                     className={styles.Free_Consult_rightArrow + " mx-2"}

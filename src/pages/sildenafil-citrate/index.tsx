@@ -194,7 +194,7 @@ const SildenafilCitrate = () => {
                   " col-lg-3 d-flex flex-column justify-content-center align-items-center text-center"
                 }
               >
-                <Image src={online1} alt="" />
+                <Image src={online1} height={90} width={90} alt="" />
                 <p>Step 1</p>
                 <h6>Start online visit</h6>
                 <p>
@@ -205,6 +205,8 @@ const SildenafilCitrate = () => {
                 className={styles.connectorImg}
                 src={ConnectorImage}
                 alt="connector"
+                width={200}
+                height={11}
               />
               <div
                 className={
@@ -212,7 +214,7 @@ const SildenafilCitrate = () => {
                   " col-lg-3 d-flex flex-column justify-content-center align-items-center text-center"
                 }
               >
-                <Image src={online2} alt="" />
+                <Image src={online2} alt="" width={90} height={90} />
                 <p>Step 2</p>
                 <h6>Hear back in 24 hours</h6>
                 <p>
@@ -224,6 +226,8 @@ const SildenafilCitrate = () => {
                 className={styles.connectorImg}
                 src={ConnectorImage}
                 alt="connector"
+                width={200}
+                height={11}
               />
               <div
                 className={
@@ -231,7 +235,7 @@ const SildenafilCitrate = () => {
                   " col-lg-3 d-flex flex-column justify-content-center align-items-center text-center"
                 }
               >
-                <Image src={online3} alt="" />
+                <Image src={online3} alt="" width={90} height={90} />
                 <p>Step 3</p>
                 <h6>Fast and free shipping</h6>
                 <p>
