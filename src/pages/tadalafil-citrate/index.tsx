@@ -109,7 +109,12 @@ const TadalafilCitrate = () => {
             }
           >
             <div className={styles.freeHealthImg}>
-              <Image src={bg4} width={551} height={531} alt="" />
+              <Image
+                src="/assets/images/bg4.svg"
+                width={551}
+                height={531}
+                alt=""
+              />
             </div>
             <div className={styles.freeHealthtxt}>
               <h2>Convenient. Secure. Affordable</h2>
