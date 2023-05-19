@@ -7,7 +7,7 @@ import phoneLight from "../../assets/icons/phoneN.svg";
 import phoneDark from "../../assets/icons/phoneND.svg";
 import user from "../../assets/icons/userN.svg";
 import userDark from "../../assets/icons/userND.svg";
-import Image from "next/link";
+import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -19,7 +19,7 @@ import ProfileMenuPopUp from "../ProfileMenuPopUp";
 import { useMediaQuery } from "react-responsive";
 import { CONSTANTS } from "../../constants/shared";
 import { useRouter } from "next/router";
-
+import logo from "../../assets/icons/logo.svg";
 type Props = {
   navType: string;
   updateSidebar: () => void;
@@ -77,7 +77,14 @@ const MainNavbar: React.FC<Props> = ({
                 </div>
               )}
               {/* {showProfilePopUp && <ProfileMenuPopUp />} */}
-
+              <Nav.Link href="/">
+                <Image
+                  src="/assets/icons/logo.svg"
+                  alt="logo"
+                  width={164}
+                  height={18}
+                />
+              </Nav.Link>
               <Navbar.Collapse
                 id="navbarScroll"
                 className={
@@ -96,23 +103,23 @@ const MainNavbar: React.FC<Props> = ({
                   navbarScroll
                 >
                   {/* <Nav.Link className={styles.nav_links}> */}
-                  <Nav.Link
+                  {/* <Nav.Link
                     style={{ textDecoration: "none" }}
                     className={styles.nav_links}
                     href="/how-it-works"
                   >
                     How It Works
-                  </Nav.Link>
+                  </Nav.Link> */}
                   {/* </Nav.Link> */}
 
                   {/* <Nav.Link className={styles.nav_links}> */}
-                  <Nav.Link
+                  {/* <Nav.Link
                     className={styles.nav_links}
                     style={{ textDecoration: "none" }}
                     href="/faq"
                   >
                     FAQs
-                  </Nav.Link>
+                  </Nav.Link> */}
                   {/* </Nav.Link> */}
                 </Nav>
                 <Nav className={styles.right_menu + " d-flex"}>

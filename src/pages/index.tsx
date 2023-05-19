@@ -256,8 +256,7 @@ const Home: React.FC = () => {
                 your needs."
               />
               <Accordion
-                title="Can I still receive medical advice or assistance from Five Corners RX LLC if I'm in So
-                uth Carolina?"
+                title="Can I still receive medical advice or assistance from Five Corners RX LLC if I'm in South Carolina?"
                 content=" If you are located in South Carolina, you may not be able to access Five Corners RX LLC's telehealth
                 services. However, you can still contact our customer support for general inquiries or seek medical
                 advice from local healthcare providers
