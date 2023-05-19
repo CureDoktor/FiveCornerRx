@@ -32,7 +32,8 @@
   "scripts": {
     "dev": "next dev -p 8000",
     "build": "next build",
-    "start": "next start -p 8000"
+    "start": "next start -p 8000",
+    "run-live": "next build && pm2 stop 0 && pm2 start 0"
   },
   "browserslist": {
     "production": [
