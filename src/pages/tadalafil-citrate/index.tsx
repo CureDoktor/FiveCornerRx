@@ -15,10 +15,17 @@ import Accordion from "../../components/Accordian/Accordian";
 import ConnectorImage from "../../assets/images/connector.svg";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const TadalafilCitrate = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const history = useRouter();
+
+  const redirekt = () => {
+    history.push("/sign-up");
+  };
 
   return (
     <motion.main
@@ -32,6 +39,7 @@ const TadalafilCitrate = () => {
           <div className={styles.width_component + " container pt-5 pb-5"}>
             <Hero
               type="light"
+              redirect={redirekt}
               primaryHead="Generic Cialis"
               secondaryHead="Tadalafil Generic"
               details="We offer Generic Cialis, the preferred ED medication of men who want long-lasting results. Our FDA-approved medication stays effective for up to 36 hours, perfect for spontaneous, uninterrupted performance."
@@ -61,7 +69,9 @@ const TadalafilCitrate = () => {
                 src={tickVerified}
                 alt="Card"
               />
-              <p className={styles.card_text}>Free, discreet 2-day shipping</p>
+              <p className={styles.card_text + " ps-md-2"}>
+                Free, discreet 2-day shipping
+              </p>
             </div>
             <div
               className={
@@ -75,7 +85,7 @@ const TadalafilCitrate = () => {
                 src={tickVerified}
                 alt="Card"
               />
-              <p className={styles.card_text}>
+              <p className={styles.card_text + " ps-md-2"}>
                 100% Safe. Verified. FDA-Approved.
               </p>
             </div>
@@ -91,7 +101,7 @@ const TadalafilCitrate = () => {
                 src={tickVerified}
                 alt="Card"
               />
-              <p className={styles.card_text}>
+              <p className={styles.card_text + " ps-md-2"}>
                 Prescribed by US medical experts
               </p>
             </div>
@@ -127,7 +137,10 @@ const TadalafilCitrate = () => {
                 with confidence and peace of mind.
               </p>
               {/* <Link href="#"> */}
-              <Button className={styles.Free_Consult_link}>
+              <Button
+                onClick={() => history.push("/sign-up")}
+                className={styles.Free_Consult_link}
+              >
                 Start FREE Consultation
                 <Image
                   className={styles.Free_Consult_rightArrow + " mx-3"}
@@ -163,7 +176,10 @@ const TadalafilCitrate = () => {
                 exactly what you're getting.
               </p>
               {/* <Link href="#"> */}
-              <Button className={styles.Free_Consult_link}>
+              <Button
+                onClick={() => history.push("/sign-up")}
+                className={styles.Free_Consult_link}
+              >
                 Start FREE Consultation
                 <Image
                   className={styles.Free_Consult_rightArrow + " mx-3"}

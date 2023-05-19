@@ -22,10 +22,16 @@ import Accordion from "../../components/Accordian/Accordian";
 import Spacer from "../../components/Spacer/Spacer";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const HomePage = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const history = useRouter();
+
+  const redirekt = () => {
+    history.push("/sign-up");
+  };
 
   return (
     <motion.main
@@ -40,6 +46,7 @@ const HomePage = () => {
             <div className={styles.width_component + " container pt-5"}>
               <Hero
                 type="dark"
+                redirect={redirekt}
                 primaryHead="Regain Control of Erectile Dysfunction"
                 secondaryHead=""
                 details="Obtain AUTHENTIC FDA-approved medication for ED in under 5 minutes. No face-to-face medical consultations, no medical bills, and no insurance necessary."

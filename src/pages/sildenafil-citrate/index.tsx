@@ -15,10 +15,17 @@ import Accordion from "../../components/Accordian/Accordian";
 import ConnectorImage from "../../assets/images/connector.svg";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const SildenafilCitrate = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const history = useRouter();
+
+  const redirekt = () => {
+    history.push("/sign-up");
+  };
 
   return (
     <motion.main
@@ -32,6 +39,7 @@ const SildenafilCitrate = () => {
           <div className={styles.width_component + " container"}>
             <Hero
               type="light"
+              redirect={redirekt}
               primaryHead="Generic Viagra"
               secondaryHead="Sildenafil Citrate"
               details="Get the Same Powerful Benefits at a Fraction of the Cost with Generic Viagra. Our FDA-approved medication contains the same active ingredient as Viagra, but is available at a fraction of the cost."
@@ -61,7 +69,9 @@ const SildenafilCitrate = () => {
                 src={tickVerified}
                 alt="Card"
               />
-              <p className={styles.card_text}>Free, discreet 2-day shipping</p>
+              <p className={styles.card_text + " ps-md-2"}>
+                Free, discreet 2-day shipping
+              </p>
             </div>
             <div className="col-lg-4 d-flex justify-content-center align-items-center">
               <Image
@@ -71,7 +81,7 @@ const SildenafilCitrate = () => {
                 src={tickVerified}
                 alt="Card"
               />
-              <p className={styles.card_text}>
+              <p className={styles.card_text + " ps-md-2"}>
                 100% Safe. Verified. FDA-Approved.
               </p>
             </div>
@@ -83,7 +93,7 @@ const SildenafilCitrate = () => {
                 src={tickVerified}
                 alt="Card"
               />
-              <p className={styles.card_text}>
+              <p className={styles.card_text + " ps-md-2"}>
                 Prescribed by US medical experts
               </p>
             </div>
@@ -119,7 +129,10 @@ const SildenafilCitrate = () => {
                 with confidence and peace of mind.
               </p>
               {/* <Link href="#"> */}
-              <Button className={styles.Free_Consult_link}>
+              <Button
+                onClick={() => history.push("/sign-up")}
+                className={styles.Free_Consult_link}
+              >
                 Start FREE Consultation
                 <Image
                   className={styles.Free_Consult_rightArrow + "  mx-3"}
@@ -154,7 +167,10 @@ const SildenafilCitrate = () => {
                 budget.
               </p>
               {/* <Link href="#"> */}
-              <Button className={styles.Free_Consult_link}>
+              <Button
+                onClick={() => history.push("/sign-up")}
+                className={styles.Free_Consult_link}
+              >
                 Start FREE Consultation
                 <Image
                   className={styles.Free_Consult_rightArrow + " mx-3"}

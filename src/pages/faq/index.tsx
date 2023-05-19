@@ -140,6 +140,49 @@ const FaqsPage = () => {
                 same quality, safety, and efficacy standards as the brand-name
                 version."
                 />
+                <Accordion
+                  title="Why are Five Corners RX LLC telehealth services not available in South Carolina?"
+                  content="Unfortunately, Five Corners RX LLC's telehealth services are not currently available in South Carolina
+                due to regulatory limitations or other factors. We apologize for
+                any inconvenience this may cause."
+                />
+                <Accordion
+                  title="Are there any plans to expand telehealth services to South Carolina in the future?"
+                  content="While we cannot provide a definite timeline, Five Corners RX LLC is constantly evaluating
+                opportunities to expand telehealth services
+                to new locations, including South Carolina. We recommend
+                checking our website or contacting our customer support for updates."
+                />
+                <Accordion
+                  title="Are there any alternative telehealth providers available in South Carolina?"
+                  content="Yes, there are alternative telehealth providers
+                available in South Carolina. We encourage you to
+                explore other telehealth platforms or consult with local healthcare providers for options that best suit
+                your needs."
+                />
+                <Accordion
+                  title="Can I still receive medical advice or assistance from Five Corners RX LLC if I'm in So
+                uth Carolina?"
+                  content=" If you are located in South Carolina, you may not be able to access Five Corners RX LLC's telehealth
+                services. However, you can still contact our customer support for general inquiries or seek medical
+                advice from local healthcare providers
+                in your area."
+                />
+                <Accordion
+                  title="How can I stay updated on the availability of Five Corners RX LLC's telehealth services in South
+                Carolina?"
+                  content="To stay informed about the availability of telehealth services in South Carolina, we recommend
+                regularly visiting our website or
+                subscribing to our newsletter, where we will provide updates on service
+                expansions and new offerings."
+                />
+                <Accordion
+                  title="Are there any other online healthcare resources I can use in South Carolina?"
+                  content="Yes, there are various online healthcare resources available in South
+                Carolina. These may include local
+                telehealth providers, online directories, or platforms that connect patients with healthcare
+                professionals. It is recommended to research and explore options that meet your specific needs."
+                />
               </div>
 
               <h4 className={styles.mtop_h4}>Our Services</h4>

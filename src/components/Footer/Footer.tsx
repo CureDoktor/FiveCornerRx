@@ -99,9 +99,9 @@ const Footer = () => {
                   Terms & Conditions
                 </li>
                 {/* </Link> */}
-                <li onClick={() => history.push(PATH.ConsentToTeleHealth)}>
+                {/* <li onClick={() => history.push(PATH.ConsentToTeleHealth)}>
                   Consent To Telehealth
-                </li>
+                </li> */}
                 {/* </Link> */}
               </ul>
             </div>

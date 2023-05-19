@@ -23,6 +23,6 @@ export const PATH = {
   SignUp: "/sign-up",
 
   TermsAndConditions: "/terms",
-  PrivacyPolicy: "/privacy",
+  PrivacyPolicy: "/privacy-policy",
   ConsentToTeleHealth: "/telehealth",
 };

@@ -6,12 +6,14 @@ import styles from "./hero.module.scss";
 import icon from "../../assets/icons/Icon.svg";
 import bottleDesign from "../../assets/images/bottle-design.svg";
 import Image from "next/image";
+
 type Props = {
   type: string;
   primaryHead: string;
   secondaryHead: string;
   details: string;
   image: string;
+  redirect: () => void;
 };
 
 const Hero: React.FC<Props> = ({
@@ -20,8 +22,8 @@ const Hero: React.FC<Props> = ({
   secondaryHead,
   details,
   image,
+  redirect,
 }) => {
-  console.log(image);
   return (
     <div className={styles.heroMain_container + " container"}>
       <div
@@ -73,7 +75,7 @@ const Hero: React.FC<Props> = ({
               </p>
             )}
             {/* <Link > */}
-            <Button className={styles.Free_Consult_link}>
+            <Button onClick={redirect} className={styles.Free_Consult_link}>
               Start FREE Consultation
               <Image
                 className={styles.Free_Consult_rightArrow + " px-1"}
