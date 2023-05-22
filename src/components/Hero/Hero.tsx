@@ -41,7 +41,7 @@ const Hero: React.FC<Props> = ({
           {image && (
             <Image
               className={styles.hero_img}
-              src="/assets/images/bottle-design.svg"
+              src={image}
               alt="medicine_image"
               width={250}
               height={300}
@@ -83,7 +83,7 @@ const Hero: React.FC<Props> = ({
                 width={15}
                 height={11}
                 alt="arrow"
-              />{" "}
+              />
             </Button>
             {/* </Link> */}
             {!secondaryHead && (

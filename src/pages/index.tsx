@@ -15,7 +15,7 @@ import drMen from "../assets/images/drMen.svg";
 import cialis from "../assets/images/cialis.svg";
 import Sildenafil from "../assets/images/bottle-design-Tadalafil1.svg";
 import MainNavbar from "../components/Navbar/MainNavbar";
-import BottleDesign from "../assets/images/bottle-design.svg";
+import BottleDesign from "/assets/images/genericCialis.svg";
 import Link from "next/link";
 import Accordion from "../components/Accordian/Accordian";
 import Spacer from "../components/Spacer/Spacer";
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
                 primaryHead="Regain Control of Erectile Dysfunction"
                 secondaryHead=""
                 details="Obtain AUTHENTIC FDA-approved medication for ED in under 5 minutes. No face-to-face medical consultations, no medical bills, and no insurance necessary."
-                image={BottleDesign}
+                image="/assets/images/genericCialis.svg"
               />
             </div>
           </div>

@@ -43,7 +43,7 @@ const TadalafilCitrate = () => {
               primaryHead="Generic Cialis"
               secondaryHead="Tadalafil Generic"
               details="We offer Generic Cialis, the preferred ED medication of men who want long-lasting results. Our FDA-approved medication stays effective for up to 36 hours, perfect for spontaneous, uninterrupted performance."
-              image={TadalafilBottle}
+              image="/assets/images/genericCialis.svg"
             />
           </div>
         </div>

@@ -43,7 +43,7 @@ const SildenafilCitrate = () => {
               primaryHead="Generic Viagra"
               secondaryHead="Sildenafil Citrate"
               details="Get the Same Powerful Benefits at a Fraction of the Cost with Generic Viagra. Our FDA-approved medication contains the same active ingredient as Viagra, but is available at a fraction of the cost."
-              image={SildenafilCitrateBottle}
+              image="/assets/images/bottle-design-Sildenafil.svg"
             />
           </div>
         </div>
