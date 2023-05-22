@@ -319,10 +319,14 @@
   margin-top: 1px;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 1.5rem 0rem 1.5rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .Free_Consult_rightArrow {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {

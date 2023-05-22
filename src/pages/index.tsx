@@ -99,21 +99,21 @@ const Home: React.FC = () => {
                 <h5>Generic Viagra</h5>
                 <p className={styles.offers_p2}>Begins at $3 per pill</p>
                 {/* <Link > */}
-                <Link
-                  style={{ textDecoration: "none" }}
-                  href="/sildenafil-citrate"
+                <Button
+                  className={styles.FreeConsultlink}
+                  onClick={() => {
+                    history.push("/sildenafil-citrate");
+                  }}
                 >
-                  <Button className={styles.FreeConsultlink}>
-                    Start Now
-                    <Image
-                      className={styles.Free_Consult_rightArrow + " px-1"}
-                      src={icon}
-                      width={15}
-                      height={11}
-                      alt="arrow"
-                    />
-                  </Button>
-                </Link>
+                  Start Now
+                  <Image
+                    className={styles.Free_Consult_rightArrow + " px-1"}
+                    src={icon}
+                    width={15}
+                    height={11}
+                    alt="arrow"
+                  />
+                </Button>
                 {/* </Link> */}
                 <Image
                   src="/assets/images/halfbottle.svg"
@@ -127,21 +127,21 @@ const Home: React.FC = () => {
                 <h5>Version of Cialis</h5>
                 <p className={styles.offers_p2}>Begins at $3 per pill</p>
                 {/* <Link > */}
-                <Link
-                  style={{ textDecoration: "none" }}
-                  href="/tadalafil-citrate"
+                <Button
+                  className={styles.FreeConsultlink}
+                  onClick={() => {
+                    history.push("/tadalafil-citrate");
+                  }}
                 >
-                  <Button className={styles.FreeConsultlink}>
-                    Start Now{" "}
-                    <Image
-                      className={styles.Free_Consult_rightArrow + " px-1"}
-                      src={icon}
-                      width={15}
-                      height={11}
-                      alt="arrow"
-                    />
-                  </Button>
-                </Link>
+                  Start Now
+                  <Image
+                    className={styles.Free_Consult_rightArrow + " px-1"}
+                    src={icon}
+                    width={15}
+                    height={11}
+                    alt="arrow"
+                  />
+                </Button>
                 <Image
                   src="/assets/images/cialishalfbottle.svg"
                   alt=""
@@ -322,14 +322,14 @@ const Home: React.FC = () => {
                 </p>
                 {/* <Link > */}
                 <Button
-                  className={styles.FreeConsultlink + " pr-2"}
+                  className={styles.FreeConsultlink}
                   onClick={() => {
                     history.push("/sign-up");
                   }}
                 >
                   Start Now
                   <Image
-                    className={styles.Free_Consult_rightArrow + " me-2"}
+                    className={styles.Free_Consult_rightArrow + " px-1"}
                     src={icon}
                     width={15}
                     height={11}

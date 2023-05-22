@@ -143,7 +143,7 @@ const TadalafilCitrate = () => {
               >
                 Start FREE Consultation
                 <Image
-                  className={styles.Free_Consult_rightArrow + " mx-3"}
+                  className={styles.Free_Consult_rightArrow + " px-1"}
                   src={icon}
                   width={15}
                   height={11}
@@ -182,7 +182,7 @@ const TadalafilCitrate = () => {
               >
                 Start FREE Consultation
                 <Image
-                  className={styles.Free_Consult_rightArrow + " mx-3"}
+                  className={styles.Free_Consult_rightArrow + " px-1"}
                   src={icon}
                   width={15}
                   height={11}
