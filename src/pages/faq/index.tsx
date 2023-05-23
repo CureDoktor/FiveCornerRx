@@ -55,31 +55,19 @@ const FaqsPage = () => {
             >
               <AccordionSmall
                 title="About FiveCornerRx"
-                content="There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration in some form, by
-            injected humour, or randomised words which don't look even
-            slightly believable."
+                content="Five Corners Rx is your trusted telehealth provider. We offer convenient online consultations with licensed healthcare providers, ensuring you receive the care you need from the comfort of your home. With a focus on confidentiality and quality, we provide safe and effective medications delivered right to your doorstep. Experience accessible healthcare with Five Corners Rx."
               />
               <AccordionSmall
                 title="Our Services"
-                content="There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration in some form, by
-            injected humour, or randomised words which don't look even
-            slightly believable."
+                content="Five Corners Rx offers online telehealth consultations with licensed healthcare providers and convenient delivery of safe and effective medications. Experience accessible and confidential healthcare from the comfort of your own home."
               />
               <AccordionSmall
                 title="Treatments"
-                content="There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration in some form, by
-            injected humour, or randomised words which don't look even
-            slightly believable."
+                content="Five Corners Rx provides telehealth consultations and treatments for erectile dysfunction (ED). Our licensed healthcare providers offer personalized assessments and prescribe effective medications to help address ED concerns. Experience discreet and convenient solutions for ED with Five Corners Rx's telehealth services."
               />
               <AccordionSmall
                 title="Delivery"
-                content="There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration in some form, by
-            injected humour, or randomised words which don't look even
-            slightly believable."
+                content="At Five Corners Rx, we offer convenient and reliable delivery options for your medications. We partner with trusted shipping carriers to ensure your prescriptions reach you in a timely manner. Depending on your location and preferences, we provide standard shipping with estimated delivery times, as well as expedited shipping options for faster delivery. During the ordering process, you will be able to select the delivery option that best suits your needs."
               />
             </div>
             {/* small faqs */}
@@ -90,55 +78,27 @@ const FaqsPage = () => {
               <div className={styles.accordion_wrapper_faq}>
                 <Accordion
                   title="How do Five Corner Rx consultations work?"
-                  content="There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable."
+                  content="At Five Corner Rx, consultations are conducted through our secure telehealth platform. You can schedule an appointment with one of our licensed healthcare providers who will assess your medical condition, discuss your symptoms, and recommend appropriate treatment options. Our consultations are convenient, confidential, and designed to ensure you receive the necessary care from the comfort of your own home."
                 />
                 <Accordion
                   title="Do I need a prescription to use Five Corner Rx?"
-                  content="Yes! Generic Viagra contains the same active ingredient as
-                brand-name Viagra and is just as effective in treating ED. In
-                fact, the only difference is the price. Five Corners Rx's
-                U.S.-based pharmacy ensures that our generic Viagra meets the
-                same quality, safety, and efficacy standards as the brand-name
-                version."
+                  content="Yes, you will need a prescription to obtain medication through Five Corner Rx. During your telehealth consultation, our healthcare providers will evaluate your medical condition and if appropriate, prescribe the necessary medication. We prioritize your health and safety, ensuring that you receive the proper treatment for your specific needs."
                 />
                 <Accordion
                   title="Do you provide the same medication as my local pharmacy?"
-                  content="Yes! Generic Viagra contains the same active ingredient as
-                brand-name Viagra and is just as effective in treating ED. In
-                fact, the only difference is the price. Five Corners Rx's
-                U.S.-based pharmacy ensures that our generic Viagra meets the
-                same quality, safety, and efficacy standards as the brand-name
-                version."
+                  content="Yes, Five Corners Rx provides the same medications that you would find at your local pharmacy. We work with licensed pharmacies and reputable suppliers to ensure that the medications we offer are of the highest quality. You can trust that the medications you receive through our service are safe, effective, and meet the necessary regulatory standards."
                 />
                 <Accordion
                   title="Is the packaging discreet?"
-                  content="Yes! Generic Viagra contains the same active ingredient as
-                brand-name Viagra and is just as effective in treating ED. In
-                fact, the only difference is the price. Five Corners Rx's
-                U.S.-based pharmacy ensures that our generic Viagra meets the
-                same quality, safety, and efficacy standards as the brand-name
-                version."
+                  content="Yes, we understand the importance of privacy and take discreet packaging seriously. Your medications will be packaged in plain, unmarked packaging without any indication of the contents. We prioritize your confidentiality and strive to ensure that your healthcare needs are handled with the utmost discretion."
                 />
                 <Accordion
                   title="Will Rocket Rx appear on my bank statement?"
-                  content="Yes! Generic Viagra contains the same active ingredient as
-                brand-name Viagra and is just as effective in treating ED. In
-                fact, the only difference is the price. Five Corners Rx's
-                U.S.-based pharmacy ensures that our generic Viagra meets the
-                same quality, safety, and efficacy standards as the brand-name
-                version."
+                  content="No, your bank statement will not show the name 'Five Corners Rx.' To ensure your privacy, we use a discreet billing descriptor that does not directly reference our services or the nature of your purchase. We understand the importance of confidentiality and take measures to protect your privacy throughout the entire process."
                 />
                 <Accordion
                   title="Is this service confidential?"
-                  content="Yes! Generic Viagra contains the same active ingredient as
-                brand-name Viagra and is just as effective in treating ED. In
-                fact, the only difference is the price. Five Corners Rx's
-                U.S.-based pharmacy ensures that our generic Viagra meets the
-                same quality, safety, and efficacy standards as the brand-name
-                version."
+                  content="Yes, confidentiality is a top priority at Five Corners Rx. We adhere to strict privacy and security measures to safeguard your personal information. All consultations and medical records are kept confidential in accordance with applicable laws and regulations. Your personal information is handled with the utmost care and stored securely to ensure your privacy and peace of mind."
                 />
               </div>
 
@@ -158,12 +118,7 @@ const FaqsPage = () => {
                 />
                 <Accordion
                   title="Which payment methods do you accept?"
-                  content="Yes! Generic Viagra contains the same active ingredient as
-                brand-name Viagra and is just as effective in treating ED. In
-                fact, the only difference is the price. Five Corners Rx's
-                U.S.-based pharmacy ensures that our generic Viagra meets the
-                same quality, safety, and efficacy standards as the brand-name
-                version."
+                  content="At Five Corners Rx, we currently accept credit cards as our primary payment method. We accept major credit cards, including Visa, Mastercard, American Express, and Discover. By utilizing credit card payments, we aim to provide a convenient and secure transaction process for our customers. We understand the importance of online security and take measures to ensure that your payment information is protected. If you have any concerns or questions regarding payment methods, please feel free to reach out to our customer support team, and they will be happy to assist you."
                 />
                 <Accordion
                   title="Why are Five Corners RX LLC telehealth services not available in South Carolina?"
@@ -237,19 +192,11 @@ const FaqsPage = () => {
               <div className={styles.accordion_wrapper_faq}>
                 <Accordion
                   title="What are my delivery options?"
-                  content="There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable."
+                  content="At Five Corners Rx, we offer convenient and reliable delivery options for your medications. We partner with trusted shipping carriers to ensure your prescriptions reach you in a timely manner. Depending on your location and preferences, we provide standard shipping with estimated delivery times, as well as expedited shipping options for faster delivery."
                 />
                 <Accordion
                   title="Which states do you deliver to?"
-                  content="Yes! Generic Viagra contains the same active ingredient as
-                brand-name Viagra and is just as effective in treating ED. In
-                fact, the only difference is the price. Five Corners Rx's
-                U.S.-based pharmacy ensures that our generic Viagra meets the
-                same quality, safety, and efficacy standards as the brand-name
-                version."
+                  content="We currently deliver medications to a wide range of states across the United States. However, delivery availability may vary based on state regulations and licensing requirements. To determine if we deliver to your state, please visit our website or contact our customer support team. We are committed to expanding our reach and providing our services to as many states as possible, ensuring accessible healthcare for our valued customers."
                 />
               </div>
             </div>
