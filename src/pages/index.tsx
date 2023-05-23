@@ -161,7 +161,7 @@ const Home: React.FC = () => {
                 " container d-flex"
               }
             >
-              <div className={styles.treatment_option_text_container}>
+              <div className={styles.treatment_option_text_container + " pb-4"}>
                 <h2>
                   Which Treatment Option
                   <br /> Suits You Best?
