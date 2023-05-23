@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <AuthContextProvider>
           <MainNavbar
             updateSidebar={() => {}}
-            navType="light"
+            navType="dark"
             logout={logoutHandler}
             header={isLogedIn}
           />
@@ -57,7 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <AuthContextProvider>
           <MainNavbar
             updateSidebar={() => {}}
-            navType="light"
+            navType="dark"
             logout={loginHandler}
             header={isLogedIn}
           />
@@ -70,7 +70,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <AuthContextProvider>
           <MainNavbar
             updateSidebar={() => {}}
-            navType="light"
+            navType="dark"
             logout={loginHandler}
             header={isLogedIn}
           />

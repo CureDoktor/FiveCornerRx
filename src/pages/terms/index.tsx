@@ -476,7 +476,7 @@ const TermsAndConditions = () => {
             dispute, including all relevant documents and information, and the
             proposed resolution. You may send the written description of the
             dispute by US Mail to FiveCornersRx, Attention: Customer Service
-            Department – 1940 Palmer Ave, Larchmont NY, 10538.. FiveCornersRx
+            Department – 1940 Palmer Ave, Larchmont NY, 10538. FiveCornersRx
             shall contact you by letter at the billing address or e-mail address
             you provided. The parties shall negotiate in good faith to resolve
             the problem or dispute. If a Final Settlement Offer is provided and

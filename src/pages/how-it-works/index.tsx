@@ -13,7 +13,9 @@ import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import { CONSTANTS } from "../../constants/shared";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const HowItsWork = () => {
+  const history = useRouter();
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -78,10 +80,13 @@ const HowItsWork = () => {
                 shipped to your doorstep. So why wait? Start your journey
                 towards overcoming ED by completing our health survey now!
               </p>
-              <Button className={styles.Free_Consult_link}>
-                Start Now Consultation
+              <Button
+                onClick={() => history.push("/sign-up")}
+                className={styles.Free_Consult_link}
+              >
+                Start FREE Consultation
                 <Image
-                  className={styles.Free_Consult_rightArrow + " mx-3"}
+                  className={styles.Free_Consult_rightArrow + " px-1"}
                   src={icon}
                   width={15}
                   height={11}
@@ -122,10 +127,13 @@ const HowItsWork = () => {
                   now!
                 </p>
                 {/* <Link href="#"> */}
-                <Button className={styles.Free_Consult_link}>
-                  Start Now Consultation
+                <Button
+                  onClick={() => history.push("/sign-up")}
+                  className={styles.Free_Consult_link}
+                >
+                  Start FREE Consultation
                   <Image
-                    className={styles.Free_Consult_rightArrow + " mx-3"}
+                    className={styles.Free_Consult_rightArrow + " px-1"}
                     src={icon}
                     width={15}
                     height={11}
@@ -167,10 +175,13 @@ const HowItsWork = () => {
                 towards overcoming ED now with us.
               </p>
               <div>
-                <Button className={styles.Free_Consult_link}>
-                  Start Now Consultation
+                <Button
+                  onClick={() => history.push("/sign-up")}
+                  className={styles.Free_Consult_link}
+                >
+                  Start FREE Consultation
                   <Image
-                    className={styles.Free_Consult_rightArrow + " mx-3"}
+                    className={styles.Free_Consult_rightArrow + " px-1"}
                     src={icon}
                     width={15}
                     height={11}

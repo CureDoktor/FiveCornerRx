@@ -129,7 +129,7 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
                 />
                 <p className={styles.primaryText}>
                   I agree to the <span>Terms of Conditions</span> and
-                  <span>Privacy Policy.</span>
+                  <span> Privacy Policy.</span>
                 </p>
               </div>
             </div>

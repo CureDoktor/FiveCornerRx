@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
           This Privacy Policy is organized into the following sections:
         </p>
         <ul>
-          <li>The Information We Collect and its Sources</li>
+          <li> The Information We Collect and its Sources</li>
           <li> Purposes of Information Use</li>
           <li> Online Analytics and Advertising</li>
           <li> How We Share and Disclose Your Information</li>

@@ -213,27 +213,29 @@ const Home: React.FC = () => {
             <div className={styles.accordion_wrapper}>
               <Accordion
                 title="Is Generic Viagra as effective as Viagra?"
-                content="Yes! Generic Viagra contains the same active ingredient as brand-name Viagra and is just as effective in treating ED. In fact, the only difference is the price. Five Corners Rx's U.S.-based pharmacy ensures that our generic Viagra meets the same quality, safety, and efficacy standards as the brand-name version."
+                content="The answer is yes! Generic Viagra contains the same active ingredient (sildenafil citrate) as brand-name Viagra and is equally effective in treating erectile dysfunction (ED). At Five Corners Rx, we exclusively work with a reputable and licensed pharmacy in the U.S. to ensure the safety, quality, and effectiveness of your ED pills. Rest assured that generic Viagra meets the same quality, safety, and efficacy standards as brand-name Viagra."
               />
               <Accordion
                 title="Is Generic Cialis as effective as Cialis?"
-                content="Yes! Generic Viagra contains the same active ingredient as brand-name Viagra and is just as effective in treating ED. In fact, the only difference is the price. "
+                content="If you're wondering about Generic Cialis, we're happy to report that it's just as effective as brand-name Cialis. Both contain the same active ingredient (tadalafil) and have the same dosage and effectiveness in treating ED or symptoms of benign prostatic hyperplasia (BPH). The FDA in the United States regulates and monitors the quality, safety, and efficacy of generic Cialis to ensure it meets the same standards as the brand-name version."
               />
               <Accordion
                 title="Do I need to be on a video call with a doctor?"
-                content="Yes! Generic Viagra contains the same active ingredient as brand-name Viagra and is just as effective in treating ED. In fact, the only difference is the price. "
+                content="At Five Corners Rx, we understand the importance of convenience and confidentiality. That's why you won't need to be in a video or phone call with a doctor to order ED pills from us. Your health survey provides your assigned U.S.-based physician with the necessary health information to prescribe your medication. In certain situations, additional information may be requested via email to ensure proper evaluation."
               />
               <Accordion
                 title="How safe are ED pills?"
-                content="Yes! Generic Viagra contains the same active ingredient as brand-name Viagra and is just as effective in treating ED. In fact, the only difference is the price. "
+                content="Safety is our top priority, and ED pills are generally safe when taken as prescribed by a doctor. Although they may have potential side effects, such as headache, flushing, nasal congestion, upset stomach, back pain, vision changes, hearing loss, and priapism, they're generally safe. It's crucial to provide accurate health information in your health survey to allow your assigned evaluating physician to properly supervise your treatment and provide you with the correct dosage and instructions for use."
               />
               <Accordion
                 title="Can I take more than the prescribed dosage?"
-                content="Yes! Generic Viagra contains the same active ingredient as brand-name Viagra and is just as effective in treating ED. In fact, the only difference is the price. "
+                content="Please don't take more than the prescribed dosage of ED pills, as it may increase the risk of side effects. If you believe that a stronger dosage may help you, please contact your assigned physician first for proper evaluation. If you experience disturbing or alarming side effects, please refer to the medication information leaflet included in your package or contact your physician immediately for urgent medical care."
               />
               <Accordion
                 title="How can I get a refill of my ED pills?"
-                content="Yes! Generic Viagra contains the same active ingredient as brand-name Viagra and is just as effective in treating ED. In fact, the only difference is the price. "
+                content="Refills are a breeze with Five Corners Rx. We take care of your entire treatment schedule for 12 months or as indicated in your online prescription. Every month, we'll send a refill of your ED medication as recommended by your evaluating physician.
+                At Five Corners Rx, we're committed to providing you with high-quality, safe, and effective ED pills, along with exceptional service and convenience. Order now and experience the Five Corners Rx difference.
+                "
               />
               <Accordion
                 title="Why are Five Corners RX LLC telehealth services not available in South Carolina?"

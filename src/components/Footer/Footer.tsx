@@ -45,12 +45,12 @@ const Footer = () => {
             <Image src={logo} alt="logo" width={164} height={18} />
             <ul className="d-block ">
               <li>
-                <Image src={phone} alt="" width={15} height={15} />
-                {CONSTANTS.PHONE_NUMBER}
+                <Image src={phone} alt="" width={22} height={20} />
+                <span className="ps-2">{CONSTANTS.PHONE_NUMBER}</span>
               </li>
               <li>
-                <Image src={mail} alt="" width={15} height={15} />
-                support@fivecornersrx.com
+                <Image src={mail} alt="" width={22} height={20} />
+                <span className="ps-2">support@fivecornersrx.com</span>
               </li>
             </ul>
           </div>
@@ -118,7 +118,7 @@ const Footer = () => {
           }
         >
           <div className={styles.footer_lower_left}>
-            <p>Copyright © UltraPharmRX 2023 . All Rights Reserved</p>
+            <p>Copyright © UltraPharmRX 2023. All Rights Reserved</p>
           </div>
           <div className={styles.footer_lower_right}>
             <Image src={payment} alt="" height={50} width={50} />

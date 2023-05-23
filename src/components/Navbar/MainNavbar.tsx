@@ -51,22 +51,22 @@ const MainNavbar: React.FC<Props> = ({
         <div className="container">
           <Navbar bg="" expand="lg" className={styles.navbar}>
             <Container className={styles.navbar_container}>
-              {header && isSmallDevice && (
+              {/* {header && isSmallDevice && (
                 <div style={{ position: "relative" }}>
-                  {/* <UsernameAvatar
-              updateSidebar={
-                history.location.pathname.includes("userdash")
-                  ? updateSidebar
-                  : () => {
-                      console.log(
-                        "CLCIKED",
-                        history.location.pathname.includes("userdash")
-                      );
-                      setShowProfilePopUp(!showProfilePopUp);
+                  <UsernameAvatar
+                    updateSidebar={
+                      history.location.includes("userdash")
+                        ? updateSidebar
+                        : () => {
+                            console.log(
+                              "CLCIKED",
+                              history.location.pathname.includes("userdash")
+                            );
+                            setShowProfilePopUp(!showProfilePopUp);
+                          }
                     }
-              }
-              username="Wasiq Abdullah"
-            /> */}
+                    username="Wasiq Abdullah"
+                  />
                   {showProfilePopUp && (
                     <ProfileMenuPopUp
                       logout={logout}
@@ -75,7 +75,7 @@ const MainNavbar: React.FC<Props> = ({
                     />
                   )}
                 </div>
-              )}
+              )} */}
               {/* {showProfilePopUp && <ProfileMenuPopUp />} */}
               <Nav.Link href="/">
                 <Image
@@ -134,14 +134,12 @@ const MainNavbar: React.FC<Props> = ({
                     {CONSTANTS.PHONE_NUMBER}
                   </Nav.Link>
                   {header ? (
-                    !isSmallDevice && (
-                      <UsernameAvatar
-                        updateSidebar={() =>
-                          setShowProfilePopUp(!showProfilePopUp)
-                        }
-                        username="Wasiq Abdullah"
-                      />
-                    )
+                    <UsernameAvatar
+                      updateSidebar={() =>
+                        setShowProfilePopUp(!showProfilePopUp)
+                      }
+                      username="Wasiq Abdullah"
+                    />
                   ) : (
                     <Button
                       variant="light"
