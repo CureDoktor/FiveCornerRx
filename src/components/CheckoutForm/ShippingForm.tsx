@@ -55,7 +55,7 @@ const ShippingForm: React.FC<Props> = ({ step, setStep }) => {
         })
         .catch((error) => {
           console.log(error);
-          return alert("Not Good!");
+          return alert(error.response.errors);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);

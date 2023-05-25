@@ -128,8 +128,15 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
                   }}
                 />
                 <p className={styles.primaryText}>
-                  I agree to the <span>Terms of Conditions</span> and
-                  <span> Privacy Policy.</span>
+                  I agree to the{" "}
+                  <span onClick={() => history.push("/terms")}>
+                    Terms of Conditions
+                  </span>{" "}
+                  and
+                  <span onClick={() => history.push("/privacy-policy")}>
+                    {" "}
+                    Privacy Policy.
+                  </span>
                 </p>
               </div>
             </div>
@@ -140,10 +147,10 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
             >
               Sign Up
             </button>
-            <button className={styles.formBtn + " " + styles.secondaryBtn}>
+            {/* <button className={styles.formBtn + " " + styles.secondaryBtn}>
               <Image alt="googleIcon" src={GoogleIcon} width={24} height={24} />
               Continue with Google
-            </button>
+            </button> */}
             <p
               style={{ textAlign: "center" }}
               onClick={() => history.push(PATH.SignIn)}

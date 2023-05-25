@@ -53,7 +53,7 @@ const Questionnaire: React.FC = () => {
           description="Generic Viagra"
           step_no={step}
           setStep_no={setStep}
-          image={SildenafilImage}
+          image="/assets/images/bottle-design-Sildenafil.svg"
         />
       ),
     },

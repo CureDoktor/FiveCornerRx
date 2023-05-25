@@ -111,9 +111,9 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
 
                 <p className={styles.primaryText}>Remember me</p>
               </div>
-              <p className={styles.primaryText + " " + styles.forgotPassText}>
+              {/* <p className={styles.primaryText + " " + styles.forgotPassText}>
                 Forgot password?
-              </p>
+              </p> */}
             </div>
             <button
               disabled={!formValidated}
@@ -122,10 +122,10 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
             >
               Sign In
             </button>
-            <button className={styles.formBtn + " " + styles.secondaryBtn}>
+            {/* <button className={styles.formBtn + " " + styles.secondaryBtn}>
               <Image src={GoogleIcon} width={24} height={24} alt="" />
               Continue with Google
-            </button>
+            </button> */}
             <p style={{ textAlign: "center" }} className={styles.primaryText}>
               Don't have an account?{" "}
               <span onClick={() => history.push(PATH.SignUp)}>Sign up</span>
