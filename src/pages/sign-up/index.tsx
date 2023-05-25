@@ -21,8 +21,10 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
   const history = useRouter();
   const [email, setEmail] = React.useState<string>("");
   const [password, setPassword] = React.useState<string>("");
+  const [revealPassword, setRevealPassword] = React.useState<boolean>(false);
   const [confirmPassword, setConfirmPassword] = React.useState<string>("");
-
+  const [revealConfirmPassword, setRevealConfirmPassword] =
+    React.useState<boolean>(false);
   const [formValidated, setFormValidated] = React.useState<boolean>(false);
   const [emailValidation, setEmailValidation] = React.useState<boolean>(false);
   const [passwordValidation, setPasswordValidation] =
@@ -95,10 +97,17 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
               value={password}
               setValue={setPassword}
               bigInput={true}
-              type="password"
+              type={revealPassword ? "text" : "password"}
               placeholder="Enter your password"
               label="Create Password"
             />
+            <button
+              onClick={() => {
+                setRevealPassword(!revealPassword);
+              }}
+            >
+              Reveal
+            </button>
             {password.length > 0 && !passwordValidation && (
               <p className="errorMessage">
                 Password must contain min 5 characters
@@ -109,10 +118,17 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
               value={confirmPassword}
               setValue={setConfirmPassword}
               bigInput={true}
-              type="password"
+              type={revealConfirmPassword ? "text" : "password"}
               placeholder="Re-type your password"
               label="Confirm Password"
             />
+            <button
+              onClick={() => {
+                setRevealConfirmPassword(!revealConfirmPassword);
+              }}
+            >
+              Reveal
+            </button>
             {confirmPassword.length > 0 && password !== confirmPassword && (
               <p className="errorMessage">
                 Confirm Password must match Password

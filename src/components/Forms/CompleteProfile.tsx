@@ -43,7 +43,14 @@ const CompleteProfile: React.FC<Props> = ({ step_no, setStep_no }) => {
           step_no < 3 && setStep_no(step_no + 1);
         })
         .catch((error) => {
-          alert(error.response.data.errors);
+          var answer: any = "";
+          Object.entries(error.response.data.errors).map(
+            ([key, value]: [key: any, value: any]) => {
+              answer += answer + "\n" + key + " : " + value;
+            }
+          );
+
+          return alert(answer);
         });
     } catch (err) {
       alert("Username or password are not good! 22" + err);
