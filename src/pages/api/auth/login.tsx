@@ -12,7 +12,7 @@ export default function handler(req: any, res: any) {
     .then((respond) => {
       res.status(200).json(respond.data);
     })
-    .catch(function (error) {
+    .catch((error) => {
       res.status(400).json(error.response.data);
     });
 }

@@ -54,8 +54,14 @@ const ShippingForm: React.FC<Props> = ({ step, setStep }) => {
           setStep(step + 1);
         })
         .catch((error) => {
-          console.log(error);
-          return alert(error.response.errors);
+          var answer: any = "";
+          Object.entries(error.response.data).map(
+            ([key, value]: [key: any, value: any]) => {
+              answer += answer + "\n" + key + " : " + value;
+            }
+          );
+
+          return alert(answer);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
