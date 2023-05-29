@@ -10,8 +10,8 @@ type Props = {
 };
 
 const UserAvatar: React.FC<Props> = ({
-  primaryText = "William Smith",
-  secondaryText = "email@example.com",
+  primaryText = "",
+  secondaryText = "",
   image,
   width,
   height,

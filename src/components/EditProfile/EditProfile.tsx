@@ -2,7 +2,7 @@ import React from "react";
 import InputComponent from "../InputComponent/InputComponent";
 import UserAvatar from "../UserAvatar/UserAvatar";
 import styles from "./editprofile.module.scss";
-import ProfileImage from "../../assets/images/profileuser.jpg";
+import ProfileImage from "../../assets/icons/profileicon.svg";
 import DashboardHeader from "../DashboardHeader/DashboardHeader";
 import { motion } from "framer-motion";
 import Image from "next/image";

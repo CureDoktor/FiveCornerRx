@@ -280,7 +280,7 @@ export default function Switch() {
                     }}
                     className={styles.backToCheckout}
                   >
-                    BACK TO CHECKOUT
+                    PROCEED TO CHECKOUT
                   </Button>
                   <br />
                 </div>

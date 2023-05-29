@@ -102,11 +102,12 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
               label="Create Password"
             />
             <button
+              className={styles.reveal}
               onClick={() => {
                 setRevealPassword(!revealPassword);
               }}
             >
-              Reveal
+              Reveal Password
             </button>
             {password.length > 0 && !passwordValidation && (
               <p className="errorMessage">
@@ -123,11 +124,12 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
               label="Confirm Password"
             />
             <button
+              className={styles.reveal}
               onClick={() => {
                 setRevealConfirmPassword(!revealConfirmPassword);
               }}
             >
-              Reveal
+              Reveal Password
             </button>
             {confirmPassword.length > 0 && password !== confirmPassword && (
               <p className="errorMessage">

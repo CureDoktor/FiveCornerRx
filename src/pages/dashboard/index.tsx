@@ -29,8 +29,66 @@ import MainNavbar from "../../components/Navbar/MainNavbar";
 import { useMediaQuery } from "react-responsive";
 import { PATH } from "../../constants/paths";
 import { motion } from "framer-motion";
+import AuthContext from "../../store/auth-context";
+import Axios from "axios";
 
 const UserDashboard: React.FC = () => {
+  const authCtx = React.useContext(AuthContext);
+  const gettingUserInfo = async () => {
+    const route = "/api/user/getUserInfo";
+
+    try {
+      const rese = await Axios.post(route, { Token: authCtx.Token() })
+        .then((res: any) => {
+          setUserInfo(res.data);
+        })
+        .catch((error: any) => {
+          console.log(error);
+        });
+    } catch (err) {
+      console.log("Something went wrong!");
+    }
+  };
+
+  React.useEffect(() => {
+    gettingUserInfo();
+  }, []);
+
+  const [userInfo, setUserInfo] = React.useState({
+    auth_customer_payment_id: null,
+    auth_customer_profile_id: null,
+    billingAddress: null,
+    billingCityId: null,
+    billingCityName: null,
+    billingFirstName: null,
+    billingLastName: null,
+    billingSameAsShipping: null,
+    billingState: null,
+    billingZip: null,
+    creditCardNumber: null,
+    cvv: null,
+    date_of_birth: null,
+    email_notification: null,
+    expirationDate: null,
+    firstName: " ",
+    id: 1,
+    lastName: " ",
+    patient_id: null,
+    payment_processor: null,
+    phone: "",
+    shippingAddress: "",
+    shippingCityId: "",
+    shippingCityName: "",
+    shippingMethod: null,
+    shippingState: "",
+    shippingZip: "",
+    sms_notification: null,
+    user_id: 2,
+    verification_job_id: null,
+    verification_status: null,
+    verification_token: null,
+  });
+
   const ProfileIconSelected = (
     <Image alt="" width={50} height={50} src={ProfileIconOne} />
   );
@@ -85,8 +143,6 @@ const UserDashboard: React.FC = () => {
   });
 
   const checkPath = (path: string) => {
-    console.log("location.pathname", location.pathname);
-    console.log("path", path);
     return location.pathname === path ? true : false;
   };
 
@@ -118,11 +174,19 @@ const UserDashboard: React.FC = () => {
         <div className={styles.contentContainer}>
           <div className={styles.coverSection}>
             <div className={styles.coverImageContainer}></div>
-            <div className={styles.coverContentContainer}>
-              <UserAvatar image={ProfileImage} width="6.5rem" height="6.5rem" />
+            <div className={styles.coverContentContainer + " py-4"}>
+              <UserAvatar
+                image="/assets/icons/profileicon.svg"
+                width="30.5rem"
+                height="22.5rem"
+                primaryText={
+                  userInfo.firstName
+                    ? userInfo.firstName + " " + userInfo.lastName
+                    : ""
+                }
+              />
             </div>
           </div>
-
           <div className={styles.dashboardContainer}>
             <div
               className={

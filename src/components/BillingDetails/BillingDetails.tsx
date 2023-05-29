@@ -42,13 +42,6 @@ const BillingDetails = () => {
     gettingUserInfo();
   }, []);
 
-  const [save, setSave] = useState(false);
-  const [billInfo, setBillInfo] = useState(false);
-  const [payInfo, setPayInfo] = useState(false);
-  const saveEnable = () => {
-    setSave(true);
-  };
-
   const [userInfo, setUserInfo] = useState({
     auth_customer_payment_id: null,
     auth_customer_profile_id: null,
@@ -83,6 +76,13 @@ const BillingDetails = () => {
     verification_status: null,
     verification_token: null,
   });
+
+  const [save, setSave] = useState(false);
+  const [billInfo, setBillInfo] = useState(false);
+  const [payInfo, setPayInfo] = useState(false);
+  const saveEnable = () => {
+    setSave(true);
+  };
 
   return (
     <motion.main

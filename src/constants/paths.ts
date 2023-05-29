@@ -1,5 +1,5 @@
 export const PATH = {
-  EditProfile: "/userdash/editprofile",
+  EditProfile: "/dashboard",
   TreatmentPlan: "/userdash/treatmentplan",
   MyCase: "/userdash/mycase",
   OrderHistory: "/userdash/orderhistory",
