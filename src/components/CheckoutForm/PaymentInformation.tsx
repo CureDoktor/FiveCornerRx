@@ -59,10 +59,13 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
   };
 
   async function submitHandler(event: any) {
+    const [year, month] = expDate.split("-");
+    const formattedDate = `${month}/${year.slice(-2)}`;
+
     var formData = {
       payment_processor: "credit_card",
       creditCardNumber: cardNumber,
-      expirationDate: expDate,
+      expirationDate: formattedDate,
       cvv: cvv,
     };
     console.log(formData);
@@ -74,8 +77,14 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
           orderWithUserProfile();
         })
         .catch((error) => {
-          console.log(error);
-          return alert("Not Good!");
+          var answer: any = "";
+          Object.entries(error.response.data).map(
+            ([key, value]: [key: any, value: any]) => {
+              answer += answer + "\n" + "Error" + " : " + value;
+            }
+          );
+
+          return alert(answer);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
@@ -133,9 +142,10 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
           setValue={setCardNumber}
           placeholder="0000-0000-0000-0000"
           label="Card Number"
+          maxlength={16}
           bigInput={true}
         />
-        {isSmallScreen && cardNumber && cardNumber.length !== 16 && (
+        {cardNumber && cardNumber.length !== 16 && (
           <p className="errorMessage">Card Number must be of 16 digits</p>
         )}
         <div className="contentSeperator"></div>
@@ -145,6 +155,7 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
           type="text"
           placeholder="CVV"
           label="CVV Number"
+          maxlength={3}
           bigInput={true}
         />
         {isSmallScreen && cvv && cvv.length !== 3 && (
@@ -153,11 +164,11 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
       </div>
       {!isSmallScreen && (
         <div className="contentRow">
-          {cardNumber && cardNumber.length !== 16 ? (
+          {/* {cardNumber && cardNumber.length !== 16 ? (
             <p className="errorMessage">Card Number must be of 16 digits</p>
           ) : (
             <div className="emptySide"></div>
-          )}
+          )} */}
           <div className="contentSeperator"></div>
           {cvv && cvv.length !== 3 && (
             <p className="errorMessage">CVV must be of 3 digits</p>
@@ -169,7 +180,7 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
         <InputComponent
           value={expDate}
           setValue={setDate}
-          type="text"
+          type="month"
           placeholder="MM/YY"
           label="Expiration Date"
           bigInput={true}

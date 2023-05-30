@@ -46,7 +46,7 @@ const CompleteProfile: React.FC<Props> = ({ step_no, setStep_no }) => {
           var answer: any = "";
           Object.entries(error.response.data.errors).map(
             ([key, value]: [key: any, value: any]) => {
-              answer += answer + "\n" + key + " : " + value;
+              answer += answer + "\n" + "Error" + " : " + value;
             }
           );
 

@@ -268,7 +268,8 @@ const StepTwoSteps: React.FC<Props> = ({ setOuterStep, setHideFormHeader }) => {
           const rest = Object.entries(cure);
           var values = "";
           rest.map(([question, answer]) => {
-            values = values + question + " : " + answer + "  ";
+            values =
+              values + "Please answer this question" + " : " + answer + "  ";
           });
           alert(values);
         });
