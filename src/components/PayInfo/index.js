@@ -21,14 +21,6 @@ import Axios from "axios";
 
 export default function PayInfo(props) {
   const [payInfo, setPayInfo] = useState(false);
-  const handleChange = (event) => {
-    const { value, name } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
   const [formData, setFormData] = useState({
     payment_processor: "credit_card",
     creditCardNumber: "",
@@ -36,12 +28,27 @@ export default function PayInfo(props) {
     cvv: "",
   });
 
+  const handleChange = (event) => {
+    const { value, name } = event.target;
+    if (name == "expirationDate") {
+      const [year, month] = value.split("-");
+      const formattedDate = `${month}/${year.slice(-2)}`;
+      value = formattedDate;
+    }
+    console.log(value);
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   const authCtx = useContext(AuthContext);
   const route = "/api/user/getUserInfo";
 
   async function submitHandler(event) {
     event.preventDefault();
     const route = "/api/user/updatePaymentInfo";
+
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token(), formData })
         .then((res) => {
@@ -67,7 +74,8 @@ export default function PayInfo(props) {
             <Form.Control
               required
               name="creditCardNumber"
-              type="number"
+              type="text"
+              maxLength="16"
               onChange={handleChange}
               placeholder="Enter Credit Card Number"
               value={formData.email}
@@ -83,7 +91,7 @@ export default function PayInfo(props) {
             <Form.Control
               required
               name="expirationDate"
-              type="text"
+              type="month"
               onChange={handleChange}
               placeholder="exp. MM/DD"
               value={formData.email}
@@ -93,14 +101,14 @@ export default function PayInfo(props) {
               Incorrect Expiration Date
             </Form.Control.Feedback>
           </Form.Group>
-
           <Form.Group as={Col} controlId="cvv">
             <Form.Control
               required
               name="cvv"
-              type="number"
+              type="text"
               htmlSize="4"
               autoComplete="on"
+              maxLength="3"
               onChange={handleChange}
               placeholder="Enter CVV"
               value={formData.email}

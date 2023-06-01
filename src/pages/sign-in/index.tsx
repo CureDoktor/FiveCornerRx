@@ -51,7 +51,7 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
 
   React.useEffect(() => {
     setEmailValidation(validateEmail(email));
-    setPasswordValidation(password.length >= 5);
+    setPasswordValidation(password.length >= 8);
 
     if (passwordValidation && emailValidation) {
       setFormValidated(true);
@@ -96,7 +96,7 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
             />
             {password.length > 0 && !passwordValidation && (
               <p className="errorMessage">
-                Password must contain min 5 characters
+                Password must contain min 8 characters
               </p>
             )}
             <div className={styles.rowContent}>

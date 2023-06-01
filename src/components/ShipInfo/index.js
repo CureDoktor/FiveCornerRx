@@ -133,22 +133,6 @@ export default function ShipInfo(props) {
         </Form.Group>
       </Row>
       <Row className="mb-3">
-        <Form.Group as={Col} controlId="shippingCityName">
-          <Form.Control
-            required
-            name="shippingCityName"
-            type="text"
-            onChange={handleChange}
-            placeholder="Enter City"
-            value={formData.email}
-            className={styles.formControl}
-          />
-          <Form.Control.Feedback type="invalid">
-            Incorrect City
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3">
         <Form.Group as={Col} controlId="shippingState">
           <Form.Control
             required
@@ -168,6 +152,22 @@ export default function ShipInfo(props) {
               to change that in the near future.
             </small>
           )}
+        </Form.Group>
+      </Row>
+      <Row className="mb-3">
+        <Form.Group as={Col} controlId="shippingCityName">
+          <Form.Control
+            required
+            name="shippingCityName"
+            type="text"
+            onChange={handleChange}
+            placeholder="Enter City"
+            value={formData.email}
+            className={styles.formControl}
+          />
+          <Form.Control.Feedback type="invalid">
+            Incorrect City
+          </Form.Control.Feedback>
         </Form.Group>
       </Row>
       <Row className="mb-3">

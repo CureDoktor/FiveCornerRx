@@ -9,6 +9,7 @@ import SignUp from "./sign-up";
 import React, { useState, useEffect, useContext } from "react";
 import Axios from "axios";
 import { AuthContextProvider } from "../store/auth-context";
+import UserDashboard from "./dashboard";
 // import "bootstrap/dist/js/bootstrap.min.js";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -34,18 +35,33 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const loginChange = () => {
     if (isLogedIn) {
-      return (
-        <AuthContextProvider>
-          <MainNavbar
-            updateSidebar={() => {}}
-            navType="dark"
-            logout={logoutHandler}
-            header={isLogedIn}
-          />
-          <Component isLoggedIn={loginHandler} {...pageProps} />
-          <Footer />
-        </AuthContextProvider>
-      );
+      if (Component.name == "SignIn" || Component.name == "SignUp") {
+        return (
+          <AuthContextProvider>
+            <MainNavbar
+              updateSidebar={() => {}}
+              navType="dark"
+              logout={logoutHandler}
+              header={isLogedIn}
+            />
+            <UserDashboard />
+            <Footer />
+          </AuthContextProvider>
+        );
+      } else {
+        return (
+          <AuthContextProvider>
+            <MainNavbar
+              updateSidebar={() => {}}
+              navType="dark"
+              logout={logoutHandler}
+              header={isLogedIn}
+            />
+            <Component isLoggedIn={loginHandler} {...pageProps} />
+            <Footer />
+          </AuthContextProvider>
+        );
+      }
     } else if (
       Component.name == "UserDashboard" ||
       Component.name == "VisitForm" ||

@@ -114,22 +114,6 @@ export default function BillInfo(props) {
         </Form.Group>
       </Row>
       <Row className="mb-3">
-        <Form.Group as={Col} controlId="billingCityName">
-          <Form.Control
-            required
-            name="billingCityName"
-            type="text"
-            onChange={handleChange}
-            placeholder="Enter City"
-            value={formData.billingCityName}
-            className={styles.formControl}
-          />
-          <Form.Control.Feedback type="invalid">
-            Incorrect City
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3">
         <Form.Group as={Col} controlId="billingState">
           <Form.Control
             required
@@ -149,6 +133,22 @@ export default function BillInfo(props) {
               to change that in the near future.
             </small>
           )}
+        </Form.Group>
+      </Row>
+      <Row className="mb-3">
+        <Form.Group as={Col} controlId="billingCityName">
+          <Form.Control
+            required
+            name="billingCityName"
+            type="text"
+            onChange={handleChange}
+            placeholder="Enter City"
+            value={formData.billingCityName}
+            className={styles.formControl}
+          />
+          <Form.Control.Feedback type="invalid">
+            Incorrect City
+          </Form.Control.Feedback>
         </Form.Group>
       </Row>
       <Row className="mb-3">

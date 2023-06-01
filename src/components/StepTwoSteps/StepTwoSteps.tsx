@@ -13,6 +13,7 @@ import { Col, Container, Button, Row } from "react-bootstrap";
 import AuthContext from "../../store/auth-context";
 import Image from "next/image";
 import Axios from "axios";
+import { useRef } from "react";
 
 type Props = {
   setOuterStep: React.Dispatch<React.SetStateAction<number>>;

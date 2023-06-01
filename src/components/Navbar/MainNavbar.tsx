@@ -20,6 +20,7 @@ import { useMediaQuery } from "react-responsive";
 import { CONSTANTS } from "../../constants/shared";
 import { useRouter } from "next/router";
 import logo from "../../assets/icons/logo.svg";
+import { DEFAULT_MIN_VERSION } from "node:tls";
 type Props = {
   navType: string;
   updateSidebar: () => void;
@@ -123,16 +124,15 @@ const MainNavbar: React.FC<Props> = ({
                   {/* </Nav.Link> */}
                 </Nav>
                 <Nav className={styles.right_menu + " d-flex"}>
-                  <Nav.Link
-                    href="/"
+                  <div
                     className={
                       navType == "dark"
-                        ? styles.nav_linksLight + " " + styles.navPhone
-                        : styles.nav_linksDark + " " + styles.navPhone
+                        ? styles.nav_linksLight + " pe-2 " + styles.navPhone
+                        : styles.nav_linksDark + " pe-2 " + styles.navPhone
                     }
                   >
                     {CONSTANTS.PHONE_NUMBER}
-                  </Nav.Link>
+                  </div>
                   {header ? (
                     <UsernameAvatar
                       updateSidebar={() =>

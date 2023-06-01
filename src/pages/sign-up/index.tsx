@@ -49,7 +49,13 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
           history.push("/questionnaire");
         })
         .catch((error: any) => {
-          alert(error.response.data.errors.password);
+          var answer: any = "";
+          Object.entries(error.response.data.errors).map(
+            ([key, value]: [key: any, value: any]) => {
+              answer += answer + "\n" + "Error" + " : " + value;
+            }
+          );
+          return alert(answer);
         });
     } catch (err) {
       alert("Username or password are not good!" + err);
@@ -58,14 +64,19 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
 
   React.useEffect(() => {
     setEmailValidation(validateEmail(email));
-    setPasswordValidation(password.length >= 5);
+    setPasswordValidation(password.length >= 8);
 
-    if (passwordValidation && emailValidation && password === confirmPassword) {
+    if (
+      passwordValidation &&
+      emailValidation &&
+      agreedTerms === true &&
+      password === confirmPassword
+    ) {
       setFormValidated(true);
     } else {
       setFormValidated(false);
     }
-  }, [email, password, confirmPassword]);
+  }, [email, password, confirmPassword, agreedTerms]);
 
   return (
     <motion.main
@@ -111,7 +122,7 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
             </button>
             {password.length > 0 && !passwordValidation && (
               <p className="errorMessage">
-                Password must contain min 5 characters
+                Password must contain min 8 characters
               </p>
             )}
             <br />
@@ -158,6 +169,10 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
                 </p>
               </div>
             </div>
+            {!agreedTerms && (
+              <p className="errorMessage">You must agree to the terms</p>
+            )}
+
             <button
               disabled={!formValidated}
               onClick={onSubmitForm}
