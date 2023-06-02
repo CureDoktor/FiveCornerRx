@@ -112,7 +112,7 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
                 <p className={styles.primaryText}>Remember me</p>
               </div>
               {/* <p className={styles.primaryText + " " + styles.forgotPassText}>
-                Forgot password?
+                Forgot password? 
               </p> */}
             </div>
             <button

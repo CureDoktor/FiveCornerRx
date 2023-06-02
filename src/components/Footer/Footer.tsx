@@ -118,7 +118,7 @@ const Footer = () => {
           }
         >
           <div className={styles.footer_lower_left}>
-            <p>Copyright © UltraPharmRX 2023. All Rights Reserved</p>
+            <p>Copyright © Five Corners RX LLC 2023. All Rights Reserved</p>
           </div>
           <div className={styles.footer_lower_right}>
             <Image src={payment} alt="" height={50} width={50} />

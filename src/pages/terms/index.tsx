@@ -512,34 +512,35 @@ const TermsAndConditions = () => {
           </p>
           <p className={styles.innerPara}>
             You expressly agree that use of the site is solely at your sole
-            risk. You acknowledge and understand that the Content and
-            UltraPharmRx Products have not been evaluated by the US Food & Drug
-            Administration (“FDA”). The Content, UltraPharmRx Products and other
-            material made available by and through the Site Offerings: (a) are
-            not intended to diagnose, treat, cure or prevent any medical
-            condition or disease; (b) are not in any way intended as medical
-            advice or as a substitute for medical advice and/or medical
+            risk. You acknowledge and understand that the Content and Five
+            Corners RX LLC Products have not been evaluated by the US Food &
+            Drug Administration (“FDA”). The Content, Five Corners RX LLC
+            Products and other material made available by and through the Site
+            Offerings: (a) are not intended to diagnose, treat, cure or prevent
+            any medical condition or disease; (b) are not in any way intended as
+            medical advice or as a substitute for medical advice and/or medical
             treatment; and (c) should only be used in conjunction with the
             guidance and care of your physician. You further understand that the
-            UltraPharmRx Products and Prescription Medications are not intended
-            for use by persons under eighteen (18) years of age. You understand
-            and agree that some of the Content associated with the UltraPharmRx
-            Products and/or the efficacy of the UltraPharmRx Products, is
-            obtained from independent third-party sources, such as news
-            agencies, scientific reports and/or scientific/research entities
-            (collectively, “Third-Party Sources”). UltraPharmRx does not warrant
-            or represent that such Content is error-free, and UltraPharmRx does
-            not represent or endorse any Third-Party Sources or the methods that
-            they use to arrive at their conclusions. All UltraPharmRx Product
-            specifications, performance data and other related information made
-            available via the Site Offerings is for informational and
-            illustrative purposes only, and do not constitute a guarantee or
-            representation that the UltraPharmRx Products will conform to such
-            specifications or performance data. UltraPharmRx does not warrant or
-            represent that the UltraPharmRx Products will provide you with any
-            particular benefits, or that your results will match those of others
-            who have used the UltraPharmRx Products. Individual results will
-            vary from person to person, and are dependent on factors including
+            Five Corners RX LLC Products and Prescription Medications are not
+            intended for use by persons under eighteen (18) years of age. You
+            understand and agree that some of the Content associated with the
+            Five Corners RX LLC Products and/or the efficacy of the Five Corners
+            RX LLC Products, is obtained from independent third-party sources,
+            such as news agencies, scientific reports and/or scientific/research
+            entities (collectively, “Third-Party Sources”). Five Corners RX LLC
+            does not warrant or represent that such Content is error-free, and
+            Five Corners RX LLC does not represent or endorse any Third-Party
+            Sources or the methods that they use to arrive at their conclusions.
+            All Five Corners RX LLC Product specifications, performance data and
+            other related information made available via the Site Offerings is
+            for informational and illustrative purposes only, and do not
+            constitute a guarantee or representation that the Five Corners RX
+            LLC Products will conform to such specifications or performance
+            data. Five Corners RX LLC does not warrant or represent that the
+            Five Corners RX LLC Products will provide you with any particular
+            benefits, or that your results will match those of others who have
+            used the Five Corners RX LLC Products. Individual results will vary
+            from person to person, and are dependent on factors including
             pre-existing medical conditions, age, weight, body chemistry, diet
             and exercise regimen.
           </p>
