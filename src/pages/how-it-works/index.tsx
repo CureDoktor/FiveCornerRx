@@ -220,8 +220,15 @@ const HowItsWork = () => {
               Monday- Sunday, 9 AM to 6 PM EST.
             </p>
             <p>
-              You may also visit our Frequently Asked Questions page for more
-              information.
+              You may also visit our{" "}
+              <b
+                style={{ cursor: "pointer" }}
+                onClick={() => history.push("/faq")}
+              >
+                {" "}
+                Frequently Asked Questions
+              </b>{" "}
+              page for more information.
             </p>
           </div>
         </div>

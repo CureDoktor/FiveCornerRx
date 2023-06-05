@@ -21,14 +21,14 @@ const Footer = () => {
             In order to obtain treatments for erectile dysfunction, an online
             consultation with a healthcare provider is required, and a
             prescription must be obtained. The cost of each dose is dependent on
-            the specific product and subscription plan that is chosen.
-            FiveCornersRx is not affiliated with any of the manufacturers of the
-            Prescription Medications mentioned, and the trademarks and logos
-            belong to their respective owners. FiveCornersRx does not offer
-            advice, endorsements, or recommendations for any particular
+            the specific product and subscription plan that is chosen. Five
+            Corners RX LLC is not affiliated with any of the manufacturers of
+            the Prescription Medications mentioned, and the trademarks and logos
+            belong to their respective owners. Five Corners RX LLC does not
+            offer advice, endorsements, or recommendations for any particular
             prescription drug, pharmacy, or other information. It is recommended
             to seek medical advice prior to making any changes to medication or
-            prescription. FiveCornersRx is not an insurance provider or
+            prescription. Five Corners RX LLC is not an insurance provider or
             Medicaid/Medicare prescription drug plan. At checkout, users are
             responsible for paying the displayed price.
           </p>
@@ -99,9 +99,9 @@ const Footer = () => {
                   Terms & Conditions
                 </li>
                 {/* </Link> */}
-                {/* <li onClick={() => history.push(PATH.ConsentToTeleHealth)}>
+                <li onClick={() => history.push(PATH.ConsentToTeleHealth)}>
                   Consent To Telehealth
-                </li> */}
+                </li>
                 {/* </Link> */}
               </ul>
             </div>

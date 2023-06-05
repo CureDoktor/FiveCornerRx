@@ -93,7 +93,7 @@ const FaqsPage = () => {
                   content="Yes, we understand the importance of privacy and take discreet packaging seriously. Your medications will be packaged in plain, unmarked packaging without any indication of the contents. We prioritize your confidentiality and strive to ensure that your healthcare needs are handled with the utmost discretion."
                 />
                 <Accordion
-                  title="Will Rocket Rx appear on my bank statement?"
+                  title="Will Five Corners RX appear on my bank statement?"
                   content="No, your bank statement will not show the name 'Five Corners Rx.' To ensure your privacy, we use a discreet billing descriptor that does not directly reference our services or the nature of your purchase. We understand the importance of confidentiality and take measures to protect your privacy throughout the entire process."
                 />
                 <Accordion

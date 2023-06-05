@@ -1,0 +1,55 @@
+.pageContainer {
+  width: 100%;
+  padding-top: 140px;
+  .contentContainer {
+    width: 85%;
+
+    margin: 0 auto;
+
+    .pageHead {
+      font-size: 3.2rem;
+      font-weight: 800;
+
+      margin: 4rem 0;
+    }
+
+    ul {
+      list-style-type: decimal;
+    }
+
+    .innerPara {
+      margin-left: -20px;
+    }
+
+    p,
+    li {
+      font-size: 1.2rem;
+      line-height: 1.75;
+      font-weight: 300;
+    }
+
+    strong {
+      font-size: 1.2rem;
+      line-height: 1.75;
+      margin: 1rem 0;
+    }
+
+    h3 {
+      font-weight: 600;
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .pageContainer {
+    .contentContainer {
+      width: 90%;
+
+      .pageHead {
+        font-size: 2.8rem;
+        margin: 2rem 0;
+      }
+    }
+  }
+}

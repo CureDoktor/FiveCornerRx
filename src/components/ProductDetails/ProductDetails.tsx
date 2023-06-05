@@ -56,13 +56,13 @@ const ProductDetails = (event: any) => {
       </p>
       <p className={styles.headText}>{product.product_tag}</p>
       <p className={styles.medicine_detail}></p>
-      <Image
+      {/* <Image
         className={styles.medicine_image}
         src={Image_source}
         width={100}
         height={100}
         alt="medicine_image"
-      />
+      /> */}
       <div className={styles.pricingDetailsRow}>
         <p className={styles.primaryText + " " + styles.dullText}>Price</p>
         <p className={styles.primaryText}>${product.product_price}</p>
