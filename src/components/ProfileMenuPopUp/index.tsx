@@ -76,6 +76,16 @@ const ProfileMenuPopUp: React.FC<Props> = ({
     verification_token: null,
   });
 
+  var primaryText = " ";
+
+  React.useEffect(() => {
+    if (userInfo == null) {
+      primaryText = " ";
+    } else {
+      primaryText = userInfo.firstName + " " + userInfo.lastName;
+    }
+  }, [userInfo]);
+
   const history = useRouter();
   return (
     <div
@@ -89,9 +99,7 @@ const ProfileMenuPopUp: React.FC<Props> = ({
         image={UserPlaceHolderImage}
         width="4.8rem"
         height="4.8rem"
-        primaryText={
-          userInfo.firstName ? userInfo.firstName + " " + userInfo.lastName : ""
-        }
+        primaryText={primaryText}
       />
       <div
         onClick={() => {

@@ -54,7 +54,7 @@ const UserDashboard: React.FC = () => {
     gettingUserInfo();
   }, []);
 
-  const [userInfo, setUserInfo] = React.useState({
+  const [userInfo, setUserInfo] = React.useState<any>({
     auth_customer_payment_id: null,
     auth_customer_profile_id: null,
     billingAddress: null,
@@ -88,6 +88,16 @@ const UserDashboard: React.FC = () => {
     verification_status: null,
     verification_token: null,
   });
+
+  var primaryText = " ";
+
+  React.useEffect(() => {
+    if (userInfo == null) {
+      primaryText = " ";
+    } else {
+      primaryText = userInfo.firstName + " " + userInfo.lastName;
+    }
+  }, [userInfo]);
 
   const ProfileIconSelected = (
     <Image alt="" width={50} height={50} src={ProfileIconOne} />
@@ -179,11 +189,7 @@ const UserDashboard: React.FC = () => {
                 image="/assets/icons/profileicon.svg"
                 width="30.5rem"
                 height="22.5rem"
-                primaryText={
-                  userInfo.firstName
-                    ? userInfo.firstName + " " + userInfo.lastName
-                    : ""
-                }
+                primaryText={primaryText}
               />
             </div>
           </div>

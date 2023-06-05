@@ -50,15 +50,28 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
   };
 
   React.useEffect(() => {
+    console.log("Usli smo");
     setEmailValidation(validateEmail(email));
     setPasswordValidation(password.length >= 8);
 
+    // if (passwordValidation && emailValidation) {
+    //   setFormValidated(true);
+    //   console.log("Radi");
+    // } else {
+    //   setFormValidated(false);
+    //   console.log("Ne radi");
+    // }
+  }, [email, password]);
+
+  React.useEffect(() => {
     if (passwordValidation && emailValidation) {
       setFormValidated(true);
+      console.log("Radi");
     } else {
       setFormValidated(false);
+      console.log("Ne radi");
     }
-  }, [email, password]);
+  }, [passwordValidation, emailValidation]);
 
   return (
     <motion.main
@@ -108,7 +121,6 @@ const SignIn: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
                     setRememberMe(!rememberMe);
                   }}
                 />
-
                 <p className={styles.primaryText}>Remember me</p>
               </div>
               {/* <p className={styles.primaryText + " " + styles.forgotPassText}>

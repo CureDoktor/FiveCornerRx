@@ -138,7 +138,7 @@ const MainNavbar: React.FC<Props> = ({
                       updateSidebar={() =>
                         setShowProfilePopUp(!showProfilePopUp)
                       }
-                      username="Nikola Curcic"
+                      username=""
                     />
                   ) : (
                     <Button
