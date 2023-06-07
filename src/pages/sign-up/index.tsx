@@ -9,7 +9,9 @@ import { useRouter } from "next/router";
 import Axios from "axios";
 import { PATH } from "../../constants/paths";
 import { motion } from "framer-motion";
+import { Eye, EyeSlash } from "react-bootstrap-icons";
 import { validateEmail } from "../../utils/util";
+import { Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import AuthContext from "../../store/auth-context";
 interface Props {
@@ -104,44 +106,56 @@ const SignUp: React.FC<Props> = ({ isLoggedIn = () => {} }: Props) => {
               <p className="errorMessage">Please Enter Valid Email Address</p>
             )}
             <br />
-            <InputComponent
-              value={password}
-              setValue={setPassword}
-              bigInput={true}
-              type={revealPassword ? "text" : "password"}
-              placeholder="Enter your password"
-              label="Create Password"
-            />
-            <button
-              className={styles.reveal}
-              onClick={() => {
-                setRevealPassword(!revealPassword);
-              }}
-            >
-              Reveal Password
-            </button>
+            <Row>
+              <Col md={11} className="p-0 m-0">
+                <InputComponent
+                  value={password}
+                  setValue={setPassword}
+                  bigInput={true}
+                  type={revealPassword ? "text" : "password"}
+                  placeholder="Enter your password"
+                  label="Create Password"
+                />
+              </Col>
+              <Col md={1} className="p-0 m-0">
+                <button
+                  className={styles.reveal}
+                  onClick={() => {
+                    setRevealPassword(!revealPassword);
+                  }}
+                >
+                  {revealPassword ? <Eye /> : <EyeSlash />}
+                </button>
+              </Col>
+            </Row>
             {password.length > 0 && !passwordValidation && (
               <p className="errorMessage">
                 Password must contain min 8 characters
               </p>
             )}
             <br />
-            <InputComponent
-              value={confirmPassword}
-              setValue={setConfirmPassword}
-              bigInput={true}
-              type={revealConfirmPassword ? "text" : "password"}
-              placeholder="Re-type your password"
-              label="Confirm Password"
-            />
-            <button
-              className={styles.reveal}
-              onClick={() => {
-                setRevealConfirmPassword(!revealConfirmPassword);
-              }}
-            >
-              Reveal Password
-            </button>
+            <Row>
+              <Col md={11} className="p-0 m-0">
+                <InputComponent
+                  value={confirmPassword}
+                  setValue={setConfirmPassword}
+                  bigInput={true}
+                  type={revealConfirmPassword ? "text" : "password"}
+                  placeholder="Re-type your password"
+                  label="Confirm Password"
+                />
+              </Col>
+              <Col md={1} className="p-0 m-0">
+                <button
+                  className={styles.reveal}
+                  onClick={() => {
+                    setRevealConfirmPassword(!revealConfirmPassword);
+                  }}
+                >
+                  {revealConfirmPassword ? <Eye /> : <EyeSlash />}
+                </button>
+              </Col>
+            </Row>
             {confirmPassword.length > 0 && password !== confirmPassword && (
               <p className="errorMessage">
                 Confirm Password must match Password
