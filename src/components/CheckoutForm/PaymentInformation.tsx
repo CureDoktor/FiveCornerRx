@@ -26,6 +26,7 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
   const [expDate, setDate] = React.useState<string>("");
   const [year, setYear] = React.useState<string>("");
   const [formValidated, setFormValidated] = React.useState<boolean>(false);
+  const [disable, setDisable] = React.useState<boolean>(false);
   const router = useRouter();
 
   const paymentValidation = () => {
@@ -59,6 +60,7 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
   };
 
   async function submitHandler(event: any) {
+    setDisable(true);
     const [year, month] = expDate.split("-");
     const formattedDate = `${month}/${year.slice(-2)}`;
 
@@ -83,10 +85,11 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
               answer += answer + "\n" + "Error" + " : " + value;
             }
           );
-
+          setDisable(false);
           return alert(answer);
         });
     } catch (err) {
+      setDisable(false);
       return alert("Something went wrong!" + err);
     }
   }
@@ -198,7 +201,7 @@ const PaymentInformation: React.FC<Props> = ({ step, setStep }) => {
         <div className="emptySide"></div>
         <div className="btnContainer">
           <ActionButton
-            disabled={!formValidated}
+            disabled={!formValidated || disable}
             action={() => submitHandler(event)}
             type={BtnTypes.Success}
             text="Next"

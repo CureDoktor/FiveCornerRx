@@ -114,6 +114,7 @@ const HomePage = () => {
                     />
                   </Button>
                 </Link>
+
                 {/* </Link> */}
                 <Image src={halfBottle1} alt="" width={280} height={300} />
               </div>
