@@ -16,26 +16,19 @@ const CompleteProfile: React.FC<Props> = ({ step_no, setStep_no }) => {
   const [formValidated, setFormValidated] = React.useState<boolean>(false);
   const [firstName, setFirstName] = React.useState<string>("");
   const [lastName, setLastName] = React.useState<string>("");
-  const [dob, setDOB] = React.useState<Date | null>(null);
+  const [dob, setDOB] = React.useState<string>("");
+
+  React.useEffect(() => {
+    console.log(dob);
+  }, [dob]);
 
   const handleSubmit = async (event: any) => {
-    var dateObj: any = dob;
-    var date = dateObj
-      .toLocaleDateString("en-GB", {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-      })
-      .split("/")
-      .reverse()
-      .join("-");
-
     event.preventDefault();
     const route = "/api/case/medical-form";
     const payload = {
       firstName: firstName,
       lastName: lastName,
-      dob: date,
+      dob: dob,
     };
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token(), payload })
@@ -99,12 +92,14 @@ const CompleteProfile: React.FC<Props> = ({ step_no, setStep_no }) => {
       )}
       <br />
       {/* <InputComponent type="text" placeholder="DD/MM/YYYY" label="Date of Birth" bigInput={true} /> */}
-      <DatePickerComponent
+
+      <InputComponent
+        value={dob}
+        setValue={setDOB}
+        type="date"
         placeholder="DD/MM/YYYY"
+        label="Date of birth"
         bigInput={true}
-        label="Date of Birth"
-        setDate={setDOB}
-        date={dob}
       />
       {dob && !is18YearsOld(dob) && (
         <p className="errorMessage">
