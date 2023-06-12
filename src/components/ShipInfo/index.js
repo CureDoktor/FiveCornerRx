@@ -60,8 +60,11 @@ export default function ShipInfo(props) {
           props.reloadInfo();
         })
         .catch((error) => {
-          console.log(error);
-          return alert("Not Good!");
+          var answer = "";
+          Object.entries(error.response.data).map(([key, value]) => {
+            answer += answer + "\n" + "Error" + " : " + value;
+          });
+          return alert(answer);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
