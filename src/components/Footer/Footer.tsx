@@ -121,7 +121,12 @@ const Footer = () => {
             <p>Copyright © Five Corners RX LLC 2023. All Rights Reserved</p>
           </div>
           <div className={styles.footer_lower_right}>
-            <Image src={payment} alt="" height={50} width={50} />
+            <Image
+              src="/assets/icons/visa.jpeg"
+              alt=""
+              height={25}
+              width={200}
+            />
           </div>
         </div>
       </div>

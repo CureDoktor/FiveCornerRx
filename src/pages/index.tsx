@@ -239,9 +239,7 @@ const Home: React.FC = () => {
               />
               <Accordion
                 title="Why are Five Corners RX LLC telehealth services not available in South Carolina?"
-                content="Unfortunately, Five Corners RX LLC's telehealth services are not currently available in South Carolina
-                due to regulatory limitations or other factors. We apologize for
-                any inconvenience this may cause."
+                content="Unfortunately, Five Corners RX LLC's telehealth services are not currently available in South Carolina due to regulatory limitations or other factors. We apologize for any inconvenience this may cause."
               />
               <Accordion
                 title="Are there any plans to expand telehealth services to South Carolina in the future?"
