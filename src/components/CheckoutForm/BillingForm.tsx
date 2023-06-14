@@ -60,7 +60,14 @@ const BillingForm: React.FC<Props> = ({ step, setStep }) => {
           setStep(step + 1);
         })
         .catch((error) => {
-          return alert("Not Good!");
+          var answer: any = "";
+          Object.entries(error.response.data).map(
+            ([key, value]: [key: any, value: any]) => {
+              answer += answer + "\n" + "Error" + " : " + value;
+            }
+          );
+
+          return alert(answer);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
@@ -211,7 +218,6 @@ const BillingForm: React.FC<Props> = ({ step, setStep }) => {
       <Spacer />
       <Spacer />
       <Spacer />
-
       <div className="contentRow">
         <div className="emptySide"></div>
         <div className="btnContainer">

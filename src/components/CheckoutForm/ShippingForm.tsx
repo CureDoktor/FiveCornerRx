@@ -57,7 +57,7 @@ const ShippingForm: React.FC<Props> = ({ step, setStep }) => {
           var answer: any = "";
           Object.entries(error.response.data).map(
             ([key, value]: [key: any, value: any]) => {
-              answer += answer + "\n" + key + " : " + value;
+              answer += answer + "\n" + "Error" + " : " + value;
             }
           );
 
