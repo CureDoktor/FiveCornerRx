@@ -120,14 +120,14 @@ const Footer = () => {
           <div className={styles.footer_lower_left}>
             <p>Copyright © Five Corners RX LLC 2023. All Rights Reserved</p>
           </div>
-          <div className={styles.footer_lower_right}>
+          {/* <div className={styles.footer_lower_right}>
             <Image
               src="/assets/icons/visa.jpeg"
               alt=""
               height={25}
               width={200}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
