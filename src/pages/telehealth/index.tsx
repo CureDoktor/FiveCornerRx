@@ -237,7 +237,7 @@ const Telehealth = () => {
           <br />
           FiveCornersRx provides Asynchronous Telehealth services through its
           platform, which utilizes secure, encrypted video conferencing
-          technology to e nable real - time interactions between patients and
+          technology to enable real - time interactions between patients and
           healthcare providers.
           <br />
           <br />
@@ -407,7 +407,7 @@ const Telehealth = () => {
           SMS and/or MMS) concerning Personal Data (defined in the FiveCornersRx
           Privacy Policy), appointments, or related matters in connection with
           my telehealth sessions, utilizing the contact information that I have
-          furnished. I compr ehend and consent that any calls or messages to me
+          furnished. I comprehend and consent that any calls or messages to me
           may be made using an auto - dialer or pre - recorded or synthetic
           voice, even if my number is listed on a do - not - call registry, and
           that my regular phone carrier charges may apply. This Informed Consent
